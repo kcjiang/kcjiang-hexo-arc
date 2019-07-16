@@ -1,0 +1,200 @@
+<!DOCTYPE html><head><meta name="generator" content="Hexo 3.8.0"><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Markdown基本语法总结"><meta name="author" content="KC.Jiang"><meta name="keywords" content="Markdown"><meta name="copyright" content="copyright.liscense_type"><title>Markdown基本语法总结</title><!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]><script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script><script src="https://cdn.bootcss.com/respond/1.4.2/respond.min.js"></script><![endif]--><link rel="icon" href="/compass/imgs/favicon.ico"><link rel="stylesheet" href="/compass/stylesheets/font-awesome.min.css"><script>var algoliaConfig = {"on":false}</script><link rel="stylesheet" href="/compass/stylesheets/screen.css"></head><body><div id="body-inner-wrapper"><header id="page-header"><nav id="nav"><div id="site-name">KC's blog</div><i class="fa fa-bars fa-2x" id="nav-icon" aria-hidden="true"></i><div id="nav-expanded"><a class="nav-word-item" href="/">主页</a><a class="nav-word-item" href="/archives">归档</a><a class="nav-word-item" href="/tags">标签</a><a class="nav-word-item" href="/categories">分类</a><a class="nav-word-item" href="/about">关于</a></div><div id="nav-list"><ul><li><a class="nav-list-item" href="/">主页</a></li><li><a class="nav-list-item" href="/archives">归档</a></li><li><a class="nav-list-item" href="/tags">标签</a></li><li><a class="nav-list-item" href="/categories">分类</a></li><li><a class="nav-list-item" href="/about">关于</a></li></ul></div></nav><div id="banner-wrapper"><div id="banner-pagetype-dependent-info"><h1 id="post-title">Markdown基本语法总结</h1><span id="post-description"><i class="fa fa-calendar" aria-hidden="true"></i> 2019-06-12</span><span id="word-count">全文共 1391 字</span><span id="time-count">需阅读时间约 5 分钟</span></div></div><a title="回到顶部"><i class="fa fa-arrow-up" id="to-Top" aria-hidden="true"></i></a><a title="点击关闭目录"><i class="fa fa-toggle-on" id="toggle-on-Toc" aria-hidden="true"></i></a><a title="点击展开目录"><i class="fa fa-toggle-off" id="toggle-off-Toc" aria-hidden="true"></i></a></header><aside id="toc-column"><div id="toc-column-inner-wrapper"><div id="post-toc"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#标题"><span class="toc-text">标题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#字体"><span class="toc-text">字体</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#分割线"><span class="toc-text">分割线</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#列表"><span class="toc-text">列表</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#无序列表"><span class="toc-text">无序列表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#有序列表"><span class="toc-text">有序列表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#列表嵌套"><span class="toc-text">列表嵌套</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#表格"><span class="toc-text">表格</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#图片"><span class="toc-text">图片</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#引用"><span class="toc-text">引用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#超链接"><span class="toc-text">超链接</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#代码"><span class="toc-text">代码</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#单行代码"><span class="toc-text">单行代码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#代码块"><span class="toc-text">代码块</span></a></li></ol></li></ol></div></div></aside><main id="main-content-column"><div id="main-content-wrapper"><div id="post-full-content"><p>Markdown是一种纯文本格式的标记语言。通过简单的标记语法，它可以使普通文本内容具有一定的格式。</p>
+<h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><p>在想要设置为标题的文字前面加#来表示<br>一个#是一级标题，两个#是二级标题，以此类推。支持六级标题。这也将作为文章目录标签出现在目录栏，如右侧的<font color="#29C6CD">【快速索引】</font></p>
+<p>注：标准语法一般在#后跟个空格再写文字，有的地方不加也行。</p>
+<p><font color="#44B8E1">Markdown语法示例：</font></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 这是一级标题</span></span><br><span class="line"><span class="comment">## 这是二级标题</span></span><br><span class="line"><span class="comment">### 这是三级标题</span></span><br><span class="line"><span class="comment">#### 这是四级标题</span></span><br><span class="line"><span class="comment">##### 这是五级标题</span></span><br><span class="line"><span class="comment">###### 这是六级标题</span></span><br></pre></td></tr></table></figure>
+
+<br>
+
+<h2 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h2><p>加粗<br>要加粗的文字左右分别用两个*号包起来</p>
+<p>斜体<br>要倾斜的文字左右分别用一个*号包起来</p>
+<p>斜体加粗<br>要倾斜和加粗的文字左右分别用三个*号包起来</p>
+<p>删除线<br>要加删除线的文字左右分别用两个~~号包起来</p>
+<p><font color="#44B8E1">Markdown语法示例：</font></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">**这是加粗的文字**</span><br><span class="line">*这是倾斜的文字*</span><br><span class="line">***这是斜体加粗的文字***</span><br><span class="line">~~这是加删除线的文字~~</span><br></pre></td></tr></table></figure>
+
+<p><font color="#44B8E1">效果如下：</font></p>
+<p><strong>这是加粗的文字</strong><br><em>这是倾斜的文字</em><br><strong><em>这是斜体加粗的文字</em></strong><br><del>这是加删除线的文字</del><br><br></p>
+<h2 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h2><p>三个或者三个以上的 - 或者 * 都可以。但效果可能会有细微差别。</p>
+<p><font color="#44B8E1">Markdown语法示例：</font></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">----</span><br><span class="line">***</span><br><span class="line">*****</span><br></pre></td></tr></table></figure>
+
+<p><font color="#44B8E1">效果如下：</font></p>
+<hr>
+<hr>
+<hr>
+<hr>
+<br>
+
+<h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><ul>
+<li><h3 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h3></li>
+</ul>
+<p><font color="#44B8E1">Markdown语法示例：</font></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">- 列表内容</span><br><span class="line">+ 列表内容</span><br><span class="line">* 列表内容</span><br><span class="line"></span><br><span class="line">注意：- + * 跟内容之间都要有一个空格；无序列表用 - + * 任何一种都可以。</span><br></pre></td></tr></table></figure>
+
+<p><font color="#44B8E1">效果如下：</font></p>
+<ul>
+<li>列表内容</li>
+</ul>
+<ul>
+<li>列表内容</li>
+</ul>
+<ul>
+<li>列表内容</li>
+</ul>
+<hr>
+<ul>
+<li><h3 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h3></li>
+</ul>
+<p><font color="#44B8E1">Markdown语法示例：</font></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">1. 列表内容</span><br><span class="line">2. 列表内容</span><br><span class="line">3. 列表内容</span><br><span class="line"></span><br><span class="line">注意：序号跟内容之间要有空格</span><br></pre></td></tr></table></figure>
+
+<p><font color="#44B8E1">效果如下：</font></p>
+<ol>
+<li>列表内容</li>
+<li>列表内容</li>
+<li>列表内容</li>
+</ol>
+<hr>
+<ul>
+<li><h3 id="列表嵌套"><a href="#列表嵌套" class="headerlink" title="列表嵌套"></a>列表嵌套</h3></li>
+</ul>
+<p>上一级和下一级之间敲三个空格即可</p>
+<ul>
+<li>一级无序列表内容<ul>
+<li>二级无序列表内容</li>
+<li>二级无序列表内容</li>
+</ul>
+</li>
+</ul>
+<br>
+
+<ul>
+<li>一级无序列表内容<ol>
+<li>二级有序列表内容</li>
+<li>二级有序列表内容</li>
+</ol>
+</li>
+</ul>
+<br>
+
+<ol>
+<li>一级有序列表内容<ul>
+<li>二级无序列表内容</li>
+<li>二级无序列表内容</li>
+</ul>
+</li>
+</ol>
+<br>
+
+<h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><p><font color="#44B8E1">Markdown语法注释：</font></p>
+<table><tr><td bgcolor="#FFFACD">
+表头|表头|表头<br>
+------|:----:|------:<br>
+内容|内容|内容<br>
+内容|内容|内容<br>
+
+<p>第二行分割表头和内容。</p>
+<ul>
+<li>有一个就行，为了对齐，多加了几个。文字默认居左。</li>
+<li>两边加: 表示文字居中。</li>
+<li>右边加: 表示文字居右。<br>注：原生的语法两边都要用 | 包起来。此处省略</li></ul></td></tr></table>
+
+<p><font color="#44B8E1">Markdown语法示例：</font></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">序号|测试项目|结果</span><br><span class="line">:-|:-|:-</span><br><span class="line">1|第一个测试项目|合格</span><br><span class="line">2|第二个测试项目|良好</span><br><span class="line">3|第三个测试项目|不合格</span><br></pre></td></tr></table></figure>
+
+<p><font color="#44B8E1">效果如下：</font></p>
+<table>
+<thead>
+<tr>
+<th align="left">序号</th>
+<th align="left">测试项目</th>
+<th align="left">结果</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">1</td>
+<td align="left">第一个测试项目</td>
+<td align="left">合格</td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left">第二个测试项目</td>
+<td align="left">良好</td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="left">第三个测试项目</td>
+<td align="left">不合格</td>
+</tr>
+</tbody></table>
+<br>
+
+<h2 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h2><p><font color="#44B8E1">Markdown语法注释：</font></p>
+<table><tr><td bgcolor="#FFFACD">![图片alt](图片地址 "图片title")
+
+<p>[图片alt]就是显示在图片下面的文字，相当于对图片内容的解释。<br>“图片title”是图片的标题，当鼠标移到图片上时显示的内容。title可加可不加</p></td></tr></table><p></p>
+<p><font color="#44B8E1">Markdown语法示例：</font></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![滑稽](http://img.mp.itc.cn/upload/20161119/7205fcb7ca4149c1920c01524112cbd9_th.jpg <span class="string">"滑稽笑脸"</span>)</span><br></pre></td></tr></table></figure>
+
+<p><font color="#44B8E1">效果①如下：</font></p>
+<p><img src="http://img.mp.itc.cn/upload/20161119/7205fcb7ca4149c1920c01524112cbd9_th.jpg" alt="滑稽" title="滑稽笑脸"><br><br></p>
+<hr>
+<p>上面演示的使用Markdown语法插入的图片会默认居中和使用原图尺寸。在这里，我们还可以使用插入HTML代码的方式插入图片以及调整图片尺寸和相对位置。</p>
+<p><font color="#44B8E1">HTML语法示例：</font></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;div align=<span class="string">"center"</span>&gt;</span><br><span class="line">	&lt;img src=<span class="string">"http://img.mp.itc.cn/upload/20161119/7205fcb7ca4149c1920c01524112cbd9_th.jpg"</span> height=<span class="string">"220"</span> width=<span class="string">"220"</span>&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+
+<p><font color="#44B8E1">效果②如下：</font></p>
+<div align="center">
+  <img src="http://img.mp.itc.cn/upload/20161119/7205fcb7ca4149c1920c01524112cbd9_th.jpg" height="220" width="220">
+</div>
+<br>
+
+<h2 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h2><p>在引用的文字前加&gt;即可。引用也可以嵌套，如：加两个&gt;&gt; 三个&gt;&gt;&gt; 或是加n个…<br>嵌套没有限制</p>
+<p><font color="#44B8E1">Markdown语法示例：</font></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt;这是引用的内容</span><br><span class="line">&gt;&gt;这是嵌套在第二层引用的内容</span><br><span class="line">&gt;&gt;&gt;&gt;这是嵌套在第四层引用的内容</span><br></pre></td></tr></table></figure>
+
+<p><font color="#44B8E1">效果如下：</font></p>
+<blockquote>
+<p>这是引用的内容</p>
+<blockquote>
+<p>这是嵌套在第二层引用的内容</p>
+<blockquote>
+<blockquote>
+<p>这是嵌套在第四层引用的内容</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+<br>
+
+<h2 id="超链接"><a href="#超链接" class="headerlink" title="超链接"></a>超链接</h2><p><font color="#44B8E1">Markdown语法注释：</font></p>
+<table><tr><td bgcolor="#FFFACD">[超链接名](超链接地址 "超链接title")
+title可加可不加</td></tr></table>
+
+<p><font color="#44B8E1">Markdown语法示例：</font></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[百度](http://baidu.com)</span><br></pre></td></tr></table></figure>
+
+<p><font color="#44B8E1">效果如下：</font></p>
+<p>【<a href="http://baidu.com" target="_blank" rel="noopener">百度</a>】</p>
+<blockquote>
+<p>注：Markdown本身语法不支持链接在新页面中打开，如果想要在新页面中打开的话可以用html语言的a标签代替。<br><br></p>
+</blockquote>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><h3 id="单行代码"><a href="#单行代码" class="headerlink" title="单行代码"></a>单行代码</h3><p>代码之间分别用一个反引号包起来</p>
+<p><font color="#44B8E1">Markdown语法示例：</font></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">`代码内容`</span><br></pre></td></tr></table></figure>
+
+<h3 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h3><p>代码之间分别用三个反引号包起来，且两边的反引号单独占一行</p>
+<p><font color="#44B8E1">Markdown语法示例：</font></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">(```)</span><br><span class="line">  代码...</span><br><span class="line">  代码...</span><br><span class="line">  代码...</span><br><span class="line">(```)</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>注：为了防止转译，前后三个反引号处加了小括号，实际是没有的。这里只是用来演示，实际中去掉两边小括号即可。</p>
+</blockquote>
+<hr>
+<p>以上列举的关于Markdown的语法基本上可以满足一般博客页面编辑的需求，当然Markdown的潜力远不止于此（包括结合HTML+CSS），更多的使用方法可以访问 <a href="http://www.markdown.cn/" target="_blank" rel="noopener">Markdown中文网</a>。</p>
+<hr>
+<p>最后一次修订于：[2019/6/12]</p>
+</div><div id="post-tags-container"><i class="fa fa-tags"></i> <a class="post-tag" href="/tags/Markdown/">#Markdown</a></div><div id="post-categories-container"><i class="fa fa-folder-open"></i>
+ <a href="/categories/教程/">教程</a></div></div></main><div id="pagination-wrapper"><a id="page-next" href="/2019/06/11/hello-world/">Hello World <i class="fa fa-chevron-right"></i></a></div><footer id="page-footer"><div id="footer-wrapper"><div id="blog-meta">Copyright &copy;&nbsp2018-2019&nbsp<a id="web-belong" href="https://hikc.net">HIKC.NET</a>. All Rights Reserved.</div><div id="viewed-record"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><span id="busuanzi_container_page_pv"><i class="fa fa-eye" aria-hidden="true"></i> <span id="busuanzi_value_page_pv"></span></span></div><div id="copyright-wrapper"><i class="fa fa-cc" aria-hidden="true"></i><div id="copyright">除非有特别声明，本博客所有文章均采用 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0 协议</a>.</div></div><div id="contact-me"><div id="rss"><a href="/atom.xml" type="application/atom+xml" rel="alternate" target="_blank"><i class="fa fa-rss" aria-hidden="true"></i></a></div><div id="email"><a href="mailto:jiangkcchn@163.com?Subject=blog"><i class="fa fa-envelope" aria-hidden="true"></i></a></div><span id="github"><a href="https://github.com/kcjiang"><i class="fa fa-github" aria-hidden="true"></i></a></span><span id="weibo"><a href="https://weibo.com/u/6363257597"><i class="fa fa-weibo" aria-hidden="true"></i></a></span></div></div></footer><script src="/compass/js/blog.js"></script></div></body>
