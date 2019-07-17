@@ -222,7 +222,7 @@ if (algoliaConfig.on) {
 	search.addWidget(
 		instantsearch.widgets.searchBox({
 			container: '#algolia-searchBox',
-			placeholder: 'Search for posts',
+			placeholder: '请输入关键字',
 		})
 	);
 
@@ -230,7 +230,7 @@ if (algoliaConfig.on) {
 		instantsearch.widgets.hits({
 			container: '#algolia-hits',
 			templates: {
-				empty: 'Oops! No matched post found for your query.',
+				empty: '很抱歉，没有发现你想要的结果。',
 				item: '<a class="relatedTitles" href="'+ '{{permalink}}" target="_self"> {{{_highlightResult.title.value}}} </a>',
 			},
 
