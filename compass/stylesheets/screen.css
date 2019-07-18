@@ -506,8 +506,13 @@ a.nav-list-item:hover {
 }
 
 @media screen and (max-width: 700px) {
-  #page-header {text-align: center;}
-  #page-header2 {text-align: center;}
+  /* line 3, ../sass/layout/_header.scss */
+  #page-header {
+    text-align: center;
+  }
+  #page-header2 {
+    text-align: center;
+  }
 }
 /* line 16, ../sass/layout/_header.scss */
 #banner-wrapper {
