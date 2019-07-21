@@ -525,13 +525,17 @@ a.nav-list-item:hover {
   background-size: auto 250px;
 }
 #banner-wrapper2 {
-  line-height: 700px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
   visibility: hidden;
   background-image: url("/compass/imgs/index_coding.svg");
   background-repeat: no-repeat;
-  -moz-background-size: auto 250px;
-  -o-background-size: auto 250px;
-  -webkit-background-size: auto 250px;
+  -moz-background-size: auto 350px;
+  -o-background-size: auto 350px;
+  -webkit-background-size: auto 350px;
   background-size: auto 350px;
 }
 @media screen and (min-width: 701px) and (max-width: 1200px) {
@@ -591,6 +595,56 @@ a.nav-list-item:hover {
     margin-left: 0;
   }
 }
+.mouse {
+  position: absolute;
+  left: 50%;
+  bottom: 40px;
+  margin-left: -12px;
+  width: 25px;
+  height: 36px;
+  border: 2px solid #888;
+  border: 2px solid rgba(255,255,255,0.27);
+  border-radius: 15px;
+  cursor: pointer;
+  -webkit-transition: border-color 0.2s ease-in;
+  -moz-transition: border-color 0.2s ease-in;
+  transition: border-color 0.2s ease-in;
+}
+.mouse .scroll {
+  display: block;
+  margin: 6px auto;
+  width: 3px;
+  height: 6px;
+  border-radius: 4px;
+  background: #b0b1b1;
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-name: scroll;
+  -moz-animation-name: scroll;
+  animation-name: scroll;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+@keyframes scroll{
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    transform: translateY(10px);
+  }
+}
+
 /* line 51, ../sass/layout/_header.scss */
 #post-title {
   margin: 0;
@@ -930,7 +984,7 @@ a.read-more:hover {
 
 @media screen and (min-width: 769px) {
   /* line 52, ../sass/layout/_post-two-cols.scss */
-  #page-others {
+  #page-content {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -941,7 +995,7 @@ a.read-more:hover {
 }
 @media screen and (max-width: 768px) {
   /* line 52, ../sass/layout/_post-two-cols.scss */
-  #page-others {
+  #page-content {
     width: 90% !important;
     padding: 45px 0;
     margin: 0 auto !important;
