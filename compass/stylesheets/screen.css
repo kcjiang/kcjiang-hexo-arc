@@ -714,18 +714,31 @@ a.button:hover {
 }
 
 /* line 80, ../sass/layout/_header.scss */
-.fa-arrow-up {
+.fa-chevron-up {
+  padding: 6px 12px;
+  border-radius: 28px;
   display: none;
   position: fixed;
-  bottom: 20px;
   z-index: 10001;
-  right: 20px;
-  color: rgba(32, 28, 56, 0.8);
+  color: rgb(255, 255, 255);
+  background: linear-gradient(135deg, rgb(155, 230, 141), rgb(0, 182, 191));
+  box-shadow: rgba(2, 6, 16, 0.2) 0px 4px 24px;
 }
 /* line 89, ../sass/layout/_header.scss */
-.fa-arrow-up:hover {
-  color: black;
+.fa-chevron-up:hover {
+  color: #007dfc;
   cursor: pointer;
+}
+@media screen and (min-width: 769px) {
+  .fa-chevron-up {
+    bottom: 130px;
+    right: 36px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .fa-chevron-up {
+    display: none !important;
+  }
 }
 
 /* line 103, ../sass/layout/_header.scss */
