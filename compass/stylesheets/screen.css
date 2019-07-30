@@ -413,7 +413,7 @@ a.nav-list-item:hover {
   margin: 5px 0 5px 10px;
   font-weight: bold;
   font-size: 1.1em;
-  background-image: url("/compass/imgs/HIKC_logo.png");
+  background-image: url("/compass/imgs/LOGO.png");
   background-repeat: no-repeat;
   letter-spacing: 1px;
   -moz-background-size: auto 50px;
@@ -518,7 +518,7 @@ a.nav-list-item:hover {
 /* line 16, ../sass/layout/_header.scss */
 #banner-wrapper {
   visibility: hidden;
-  background-image: url("/compass/imgs/fHangingClothes.png");
+  background-image: url("/compass/imgs/page_notes.svg");
   background-repeat: no-repeat;
   -moz-background-size: auto 250px;
   -o-background-size: auto 250px;
