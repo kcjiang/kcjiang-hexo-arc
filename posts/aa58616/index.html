@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Description-->
+    
+    <meta name="description"
+        content="这个系列的 上一篇文章 已经快一年了。我真是懒啊……
+中文的谓语动词不在时间、状态、语态上作区分。在中文中，这些功能由其它副词提供。在英文中，动词的形态需要根据时间、状态、语态发生改变。对于中国人来说，这样的变化确实有些不自然；选错时态也是中国人讲英文时经常犯的错误。
+在这里，语态和说话人的态度相关">
+    
+
+    <!--Author-->
+    
+    <meta name="author" content="K.C.">
+    
+
+    <!--Open Graph Title-->
+    
+    <meta property="og:title" content="英语语法（三）：动词时态" />
+    
+
+    <!--Open Graph Description-->
+    
+
+    <!--Open Graph Site Name-->
+    <meta property="og:site_name" content="K.C&#39;s Blog" />
+
+    <!--Type page-->
+    
+    <meta property="og:type" content="article" />
+    
+
+    <!--Page Cover-->
+    
+
+    <meta name="twitter:card" content="summary" />
+    
+
+    <!-- Title -->
+    <title>英语语法（三）：动词时态 [ K.C&#39;s Blog ]</title>
+
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:400,400i,700,700i,800">
+
+    <!-- Custom CSS -->
+    
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/Normalize.min.css">
+    
+    <link rel="stylesheet" href="/css/screen.css">
+    
+    <link rel="stylesheet" href="/css/footprint.css">
+    
+    
+
+    <!-- Google Analytics -->
+    
+
+
+
+    <script>
+        var themeOptions = {
+            disqus_shortname: 'hikc',
+            white_logo: '',
+            white_icon: '',
+        };
+    </script>
+    <!--
+    <script>
+        var localTheme = localStorage.getItem('dawn_theme');
+        switch (localTheme) {
+            case 'dark':
+                document.documentElement.classList.add('theme-dark');
+                break;
+            case 'light':
+                document.documentElement.classList.add('theme-light');
+                break;
+            default:
+                break;
+        }
+    </script>
+ -->
+
+
+
+
+    <link rel="alternate" type="application/rss+xml" title="hikc.net" href="/atom.xml" />
+
+<meta name="generator" content="Hexo 5.4.0"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+
+
+
+<body class="post-template">
+  <svg width="0" height="0" style="display: none;">
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="arrow-left">
+      <path d="M26.667 14.667v2.667h-16L18 24.667l-1.893 1.893L5.547 16l10.56-10.56L18 7.333l-7.333 7.333h16z"></path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="arrow-right">
+      <path d="M5.333 14.667v2.667h16L14 24.667l1.893 1.893L26.453 16 15.893 5.44 14 7.333l7.333 7.333h-16z"></path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="brightness-2">
+      <path
+        d="M13.333 2.667c-2.427 0-4.707.667-6.667 1.8 4 2.307 6.667 6.6 6.667 11.533s-2.667 9.227-6.667 11.533c1.96 1.133 4.24 1.8 6.667 1.8 7.36 0 13.333-5.973 13.333-13.333S20.693 2.667 13.333 2.667z">
+      </path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="chevron-left">
+      <path d="M20.547 22.107L14.44 16l6.107-6.12L18.667 8l-8 8 8 8 1.88-1.893z"></path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="chevron-right">
+      <path d="M11.453 22.107L17.56 16l-6.107-6.12L13.333 8l8 8-8 8-1.88-1.893z"></path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="circle-half-full">
+      <path
+        d="M16 2.667c-7.36 0-13.333 5.973-13.333 13.333s5.973 13.333 13.333 13.333c7.36 0 13.333-5.973 13.333-13.333s-5.973-13.333-13.333-13.333zM16 5.333c5.893 0 10.667 4.773 10.667 10.667s-4.773 10.667-10.667 10.667v-21.333z">
+      </path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="dots-horizontal">
+      <path
+        d="M21.333 16c0-1.473 1.194-2.667 2.667-2.667v0c1.473 0 2.667 1.194 2.667 2.667v0c0 1.473-1.194 2.667-2.667 2.667v0c-1.473 0-2.667-1.194-2.667-2.667v0zM13.333 16c0-1.473 1.194-2.667 2.667-2.667v0c1.473 0 2.667 1.194 2.667 2.667v0c0 1.473-1.194 2.667-2.667 2.667v0c-1.473 0-2.667-1.194-2.667-2.667v0zM5.333 16c0-1.473 1.194-2.667 2.667-2.667v0c1.473 0 2.667 1.194 2.667 2.667v0c0 1.473-1.194 2.667-2.667 2.667v0c-1.473 0-2.667-1.194-2.667-2.667v0z">
+      </path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="facebook-box">
+      <path
+        d="M6.667 4h18.667c1.467 0 2.667 1.2 2.667 2.667v18.667c0 1.467-1.2 2.667-2.667 2.667H6.667A2.675 2.675 0 0 1 4 25.334V6.667C4 5.2 5.2 4 6.667 4zM24 6.667h-3.333A4.672 4.672 0 0 0 16 11.334v3.333h-2.667v4H16V28h4v-9.333h4v-4h-4V12c0-.733.6-1.333 1.333-1.333H24v-4z">
+      </path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="facebook">
+      <path
+        d="M22.667 2.667V8H20c-.92 0-1.333 1.08-1.333 2v3.333h4v5.333h-4v10.667h-5.333V18.666h-4v-5.333h4V8a5.332 5.332 0 0 1 5.333-5.333h4z">
+      </path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="linkedin">
+      <path
+        d="M25.333 4c1.473 0 2.667 1.194 2.667 2.667v0 18.667c0 1.473-1.194 2.667-2.667 2.667v0h-18.667c-1.473 0-2.667-1.194-2.667-2.667v0-18.667c0-1.473 1.194-2.667 2.667-2.667v0h18.667zM24.667 24.667v-7.067c0-2.401-1.946-4.347-4.347-4.347v0c-1.133 0-2.453 0.693-3.093 1.733v-1.48h-3.72v11.16h3.72v-6.573c0-1.027 0.827-1.867 1.853-1.867 1.031 0 1.867 0.836 1.867 1.867v0 6.573h3.72zM9.173 11.413c1.237 0 2.24-1.003 2.24-2.24v0c0-1.24-1-2.253-2.24-2.253-1.244 0-2.253 1.009-2.253 2.253v0c0 1.24 1.013 2.24 2.253 2.24zM11.027 24.667v-11.16h-3.693v11.16h3.693z">
+      </path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" id="loader">
+      <path opacity="0.3" fill="currentColor"
+        d="M20.201,5.169c-8.254,0-14.946,6.692-14.946,14.946c0,8.255,6.692,14.946,14.946,14.946 s14.946-6.691,14.946-14.946C35.146,11.861,28.455,5.169,20.201,5.169z M20.201,31.749c-6.425,0-11.634-5.208-11.634-11.634 c0-6.425,5.209-11.634,11.634-11.634c6.425,0,11.633,5.209,11.633,11.634C31.834,26.541,26.626,31.749,20.201,31.749z" />
+      <path fill="currentColor"
+        d="M26.013,10.047l1.654-2.866c-2.198-1.272-4.743-2.012-7.466-2.012h0v3.312h0 C22.32,8.481,24.301,9.057,26.013,10.047z">
+        <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 20 20" to="360 20 20"
+          dur="0.5s" repeatCount="indefinite" />
+      </path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="magnify">
+      <path
+        d="M12.667 4a8.667 8.667 0 0 1 8.667 8.667c0 2.147-.787 4.12-2.08 5.64l.36.36h1.053l6.667 6.667-2 2-6.667-6.667v-1.053l-.36-.36a8.689 8.689 0 0 1-5.64 2.08C7.88 21.334 4 17.454 4 12.667S7.88 4 12.667 4zm0 2.667c-3.333 0-6 2.667-6 6s2.667 6 6 6 6-2.667 6-6-2.667-6-6-6z">
+      </path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="menu-down">
+      <path d="M9.333 13.333L16 20l6.667-6.667H9.334z"></path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="rss-box">
+      <path
+        d="M6.667 4h18.667c1.467 0 2.667 1.2 2.667 2.667v18.667c0 1.467-1.2 2.667-2.667 2.667H6.667A2.675 2.675 0 0 1 4 25.334V6.667C4 5.2 5.2 4 6.667 4zM10 20c-1.107 0-2 .893-2 2s.893 2 2 2 2-.893 2-2-.893-2-2-2zm-2-6.667V16c4.413 0 8 3.587 8 8h2.667c0-5.893-4.773-10.667-10.667-10.667zM8 8v2.667c7.36 0 13.333 5.973 13.333 13.333H24c0-8.84-7.16-16-16-16z">
+      </path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="star">
+      <path
+        d="M16 23.027L24.24 28l-2.187-9.373 7.28-6.307-9.587-.827-3.747-8.827-3.747 8.827-9.587.827 7.267 6.307L7.759 28l8.24-4.973z">
+      </path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="table-of-contents">
+      <path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"></path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="twitter-box">
+      <path
+        d="M6.667 4h18.667c1.467 0 2.667 1.2 2.667 2.667v18.667c0 1.467-1.2 2.667-2.667 2.667H6.667A2.675 2.675 0 0 1 4 25.334V6.667C4 5.2 5.2 4 6.667 4zm16.946 8.44c.64-.533 1.387-1.173 1.72-1.88-.547.28-1.2.453-1.92.547.667-.48 1.213-1.107 1.493-1.96-.693.373-1.4.693-2.28.853-2.067-2.493-7.013-.467-6.133 3.267-3.48-.213-5.6-1.787-7.36-3.72-1 1.627-.133 4.093 1.053 4.773-.613-.04-1.08-.227-1.52-.44.053 2.053 1.187 3.04 2.773 3.573a4.47 4.47 0 0 1-1.52.04c.493 1.427 1.52 2.32 3.28 2.507-1.2 1.013-3.413 1.72-5.2 1.44 1.533.973 3.28 1.747 5.707 1.64 5.88-.267 9.813-4.48 9.907-10.64z">
+      </path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="twitter">
+      <path
+        d="M29.947 8a11.423 11.423 0 0 1-3.28.92 5.738 5.738 0 0 0 2.507-3.173 11.52 11.52 0 0 1-3.627 1.4C24.494 6 23.014 5.334 21.334 5.334c-3.133 0-5.693 2.56-5.693 5.72 0 .453.053.893.147 1.307A16.261 16.261 0 0 1 4.001 6.388a5.663 5.663 0 0 0-.773 2.867c0 1.987 1 3.747 2.547 4.747-.947 0-1.827-.267-2.6-.667v.04a5.724 5.724 0 0 0 4.587 5.613 5.644 5.644 0 0 1-2.574.093c.72 2.253 2.813 3.933 5.333 3.973-1.947 1.547-4.413 2.453-7.107 2.453-.453 0-.907-.027-1.36-.08A16.19 16.19 0 0 0 10.827 28c10.507 0 16.28-8.72 16.28-16.28 0-.253 0-.493-.013-.747A11.42 11.42 0 0 0 29.947 8z">
+      </path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="white-balance-sunny">
+      <path
+        d="M4.733 24.72l1.88 1.88 2.4-2.387L7.12 22.32zm9.934 5.213h2.667V26h-2.667zM16 7.333c-4.413 0-8 3.587-8 8s3.587 8 8 8 8-3.587 8-8c0-4.427-3.587-8-8-8zm10.667 9.334h4V14h-4zm-3.68 7.546l2.4 2.387 1.88-1.88-2.387-2.4zm4.28-18.266l-1.88-1.88-2.4 2.387 1.893 1.893zM17.333.733h-2.667v3.933h2.667zM5.333 14h-4v2.667h4zm3.68-7.547l-2.4-2.387-1.88 1.88 2.387 2.4 1.893-1.893z">
+      </path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="window-close">
+      <path
+        d="M17.947 16l7.387 7.387v1.947h-1.947L16 17.947l-7.387 7.387H6.666v-1.947L14.053 16 6.666 8.613V6.666h1.947L16 14.053l7.387-7.387h1.947v1.947L17.947 16z">
+      </path>
+    </symbol>
+  </svg>
+  <div class="container">
+    <div class="site">
+      <header class="site-header">
+    <div class="header-left">
+        <a class="logo" href="/">
+            <span class="logo-text">HIKC.NET</span>
+        </a>
+    </div>
+    <nav class="main-nav hidden-xs hidden-sm hidden-md">
+        
+        <a class="menu-item" href="/">首页</a>
+        
+        <a class="menu-item" href="/archives">归档</a>
+        
+        <a class="menu-item" href="/about">关于</a>
+        
+        <a class="menu-item" href="/...">More links</a>
+        
+        <a class="menu-item" href="/friends">友链</a>
+        
+
+        <button class="button-icon menu-item-button js-modal" data-modal="search" aria-label="Search" id="local-search-open_Desktop">
+            <svg class="icon">
+                <use xlink:href="#magnify"></use>
+            </svg>
+        </button>
+    </nav>
+
+    <button class="button-icon hidden-lg hidden-xl js-modal" data-modal="search" aria-label="Search" id="local-search-open_Mobile">
+        <svg class="icon">
+            <use xlink:href="#magnify"></use>
+        </svg>
+    </button>
+    <div class="burger hidden-lg hidden-xl">
+        <div class="burger-bar"></div>
+        <div class="burger-bar"></div>
+    </div>
+
+    <div class="mobile-menu hidden-lg hidden-xl">
+        <div class="container">
+            <nav class="mobile-nav">
+                
+                <a class="menu-item" href="/">首页</a>
+                
+                <a class="menu-item" href="/archives">归档</a>
+                
+                <a class="menu-item" href="/about">关于</a>
+                
+                <a class="menu-item" href="/...">More links</a>
+                
+                <a class="menu-item" href="/friends">友链</a>
+                
+
+                <a class="menu-item" target="_blank" rel="noopener" href="https://github.com/">Github</a>
+                <a class="menu-item menu-item-cta" href="/atom.xml">RSS</a>
+            </nav>
+        </div>
+    </div>
+    <div class="header-right hidden-xs hidden-sm hidden-md">
+        <a class="menu-item" target="_blank" rel="noopener" href="https://github.com/">Github</a>
+        <a class="menu-item menu-item-cta" href="/atom.xml">RSS</a>
+    </div>
+</header>
+      <header class="sticky kg-width-full">
+  <div class="sticky-title">英语语法（三）：动词时态</div>
+  <button class="button-icon sticky-toc-button" aria-label="Table of Contents">
+    <svg class="icon">
+      <use xlink:href="#table-of-contents"></use>
+    </svg>
+    <div class="sticky-toc"></div>
+  </button>
+  <div class="sticky-track">
+    <div class="sticky-progress"></div>
+  </div>
+</header>
+
+<div class="site-content">
+  <div class="content-area">
+    <main class="site-main">
+      <article class="single post kg-width-narrow">
+        <header class="single-header">
+          <div class="single-meta">
+            <span class="single-meta-item single-meta-date">
+              <time datetime="2015-05-03">
+                2015-05-03
+              </time>
+            </span>
+            <span class="single-meta-item single-meta-length">
+              16 min read
+            </span>
+            <span class="single-meta-item single-meta-tag">
+              
+              <a class="post-tag" href="/tags/英语/">#英语</a>
+              
+            </span>
+          </div>
+          <h1 class="single-title">英语语法（三）：动词时态</h1>
+          <div class="single-excerpt">
+            
+          </div>
+        </header>
+
+        
+        
+        <div class="single-media kg-width-wide u-placeholder horizontal">
+          <img class="lazyload u-object-fit" src="/assets/img/Chalky-home.png" alt="英语语法（三）：动词时态">
+        </div>
+        
+
+        <div class="single-content u-text-format">
+          <p>这个系列的 <a href="/2014/06/22/noun-phrase-and-articles/">上一篇文章</a> 已经快一年了。我真是懒啊……</p>
+<p>中文的谓语动词不在时间、状态、语态上作区分。在中文中，这些功能由其它副词提供。在英文中，动词的形态需要根据时间、状态、语态发生改变。对于中国人来说，这样的变化确实有些不自然；选错时态也是中国人讲英文时经常犯的错误。</p>
+<p>在这里，语态和说话人的态度相关，比较容易感受。同时，语态反应在动词形态上的变化也相对简单，只需要加上合适的 <code>be</code> 动词，配上动词的过去分词即可。时态和动作发生的时间相关，也相对直观。因此，如果我们能对状态做一些简化，从状态出发去讨论时态，则问题会简单得多。</p>
+<h2 id="状态的简化"><a href="#状态的简化" class="headerlink" title="状态的简化"></a>状态的简化</h2><p>在现代英语中，状态分为</p>
+<ul>
+<li>一般状态（如：一般现在式）</li>
+<li>进行状态（如：一般进行式）</li>
+<li>完成状态（如：现在完成式）</li>
+</ul>
+<p>其中，进行状态的语法特征是 <code>be + 动词的现在分词（V-ing）</code>。如果我们「暂时忘掉」进行状态这个概念，把上述结构看做是 <code>be</code> 动词加上补语（表语）的结构，那这个结构和传统语法中的「一般状态」就没什么区别了。只不过，进行状态的动词是个 <code>be</code> 动词而已。也就是说，我们完全可以把进行状态看做是一种特殊的一般状态，它的谓语动词是个空的 <code>be</code> 动词。</p>
+<p>因此，我们可以将一般状态和进行状态合并在一起，称之为「简单式」。为了统一称呼，我们把完成状态叫做「完成式」。</p>
+<p>注意，这里的简化并不受语态影响。相对主动语态，被动语态不过是 <code>be + 动词的过去分词（V-ed）</code>而已。我们依然可以把被动语态当做 <code>be</code> 动词加上补语（表语）的结构。这样，语态完全不影响上述简化过程。</p>
+<h2 id="简单式"><a href="#简单式" class="headerlink" title="简单式"></a>简单式</h2><p>简单式有几个重要的特征：</p>
+<ul>
+<li><strong>简单式的动作，其发生的具体时间是一个特定的时间段</strong></li>
+<li><strong>动作发生的时间段可大可小，可以延伸至无穷远的过去或无穷远的将来，也可以缩小至一个具体的时间点</strong></li>
+<li><strong>如果动作发生的时间段</strong><ul>
+<li>包括「现在」这个时间点，那么用现在时态</li>
+<li>不包括「现在」这个时间点，且位于现在之前，那么用过去时态</li>
+<li>不包括「现在」这个时间点，且位于现在之后，那么用将来时态</li>
+</ul>
+</li>
+</ul>
+<p>第一个特征，给了我们明确的信息来确定我们是否应该使用简单式（而不是完成式）。第二和第三个特征，则为我们选择时态提供了依据。</p>
+<h3 id="过去时态"><a href="#过去时态" class="headerlink" title="过去时态"></a>过去时态</h3><blockquote>
+<p>The U.S.A <em>established</em> diplomatic relations with the P.R.C <em>in 1979</em>.</p>
+</blockquote>
+<ul>
+<li>动作发生的时间段是 _1979 年_，这是一个特定的时间段，所以应该用简单式</li>
+<li>这个时间段不包括现在这个时间点，且位于现在之前，所以应该用过去时态</li>
+<li>这里不涉及到被动的语态，也不涉及到「持续」或者「正在发生」的含义，所以不需要额外的 <code>be</code> 动词</li>
+</ul>
+<p>因此，动词 <code>establish</code> 应该用过去式 <code>established</code>。这是传统语法的「一般过去式」。</p>
+<blockquote>
+<p>The movable print <em>was</em> introduced to England <em>in 1485</em>.</p>
+</blockquote>
+<ul>
+<li>动作发生的时间段是 _1485 年_，这是一个特定的时间段，所以应该用简单式</li>
+<li>这个时间段不包括现在这个时间点，且位于现在之前，所以应该用过去时态</li>
+<li>这里涉及到被动的语态，但不涉及到「持续」或者「正在发生」的含义，所以需要用 <code>be + V-ed</code> 的形态</li>
+</ul>
+<p>因此，我们需要用 <code>be</code> 动词的过去形态 <code>was</code>，以及 <code>introduced</code> 这个过去分词。这是传统语法的「一般过去式被动语态」。</p>
+<blockquote>
+<p>I <em>was</em> visiting clients <em>the whole day yesterday</em>.</p>
+</blockquote>
+<ul>
+<li>动作发生的时间段是 _昨天一整天_，这是一个特定的时间段，所以应该用简单式</li>
+<li>这个时间段不包括现在这个时间点，且位于现在之前，所以应该用过去时态</li>
+<li>这里不涉及到被动的语态，但涉及到「持续」的含义，所以需要用 <code>be + V-ing</code> 的形态</li>
+</ul>
+<p>因此，我们需要用 <code>be</code> 动词的过去形态 <code>was</code>，以及 <code>visiting</code> 这个现在分词。这是传统语法的「过去进行式」。</p>
+<blockquote>
+<p>I <em>was</em> watching TV, <em>when I heard the door bell</em>.</p>
+</blockquote>
+<ul>
+<li>动作发生的时间段是 _听到门铃响的瞬间_，这是一个特定的时间段，退化为一个时间点，所以应该用简单式</li>
+<li>这个时间段不包括现在这个时间点，且位于现在之前，所以应该用过去时态</li>
+<li>这里不涉及到被动的语态，但涉及到「正在发生」的含义，所以需要用 <code>be + V-ing</code> 的形态</li>
+</ul>
+<p>因此，我们需要用 <code>be</code> 动词的过去形态 <code>was</code>，以及 <code>watching</code> 这个现在分词。这是传统语法的「过去进行式」。</p>
+<blockquote>
+<p>The witness <em>was</em> being questioned in court <em>when he had a heart attack</em>.</p>
+</blockquote>
+<ul>
+<li>动作发生的时间段是 _心脏病发作的瞬间_，这是一个特定的时间段，退化为一个时间点，所以应该用简单式</li>
+<li>这个时间段不包括现在这个时间点，且位于现在之前，所以应该用过去时态</li>
+<li>这里涉及到被动的语态，所以需要用 <code>be + V-ed</code>；同时，这里也涉及到「正在发生」的含义，所以需要用 <code>be + V-ing</code> 的形态</li>
+</ul>
+<p>因此，我们需要用 <code>be</code> 动词的过去形态 <code>was</code>，同时还需要 <code>being</code> 作为 <code>V-ing</code> 部分，然后还需要 <code>question</code> 的过去分词 <code>questioned</code>。这是传统语法的「过去进行式被动语态」。</p>
+<h3 id="现在时态"><a href="#现在时态" class="headerlink" title="现在时态"></a>现在时态</h3><blockquote>
+<p>Obama <em>is</em> the U.S. President.</p>
+</blockquote>
+<ul>
+<li>动作发生的时间段是 _几年前奥巴马上任之时到几年后奥巴马卸任之时_，这是一个特定的时间段，所以应该用简单式</li>
+<li>这个时间段包括现在这个时间点，所以应该用现在时态</li>
+<li>这里不涉及到被动的语态，也不涉及到「持续」或者「正在发生」的含义，所以不需要额外的 <code>be</code> 动词</li>
+</ul>
+<p>因此，我们需要用 <code>is</code>。这是传统语法的「一般现在式」。</p>
+<blockquote>
+<p>Kyrie <em>steals</em> the ball and <em>passes</em> it to LeBron.</p>
+</blockquote>
+<ul>
+<li>这是体育解说员在播报克利夫兰骑士队的比赛，动作发生的时间段是 _现在_，这是一个特定的时间段，所以应该用简单式</li>
+<li>这个时间段包括现在这个时间点，所以应该用现在时态</li>
+<li>这里不涉及到被动的语态，也不涉及到「持续」或者「正在发生」的含义，所以不需要额外的 <code>be</code> 动词</li>
+</ul>
+<p>因此，我们分别需要用 <code>steal</code> 和 <code>pass</code> 单数第三人称形式 <code>steals</code> 和 <code>pass</code>。这是传统语法的「一般现在式」。</p>
+<blockquote>
+<p>All mothers <em>love</em> their children.</p>
+</blockquote>
+<ul>
+<li>动作发生的时间段是 _无穷远的过去到无穷远的将来_，也就是所谓的真理，这是一个特定的时间段，所以应该用简单式</li>
+<li>这个时间段包括现在这个时间点，所以应该用现在时态</li>
+<li>这里不涉及到被动的语态，也不涉及到「持续」或者「正在发生」的含义，所以不需要额外的 <code>be</code> 动词</li>
+</ul>
+<p>因此，我们需要用 <code>love</code> 的原型。这是传统语法的「一般现在式」。</p>
+<p>这就是为什么，传统语法说「真理要用一般现在式」。其实理解了我们的原理，就不需要被这些「特例」了。</p>
+<blockquote>
+<p>Walmart <em>is</em> selling big cokes at a discount <em>this mouth</em>.</p>
+</blockquote>
+<ul>
+<li>动作发生的时间段是 _这个月_，这是一个特定的时间段，所以应该用简单式</li>
+<li>这个时间段包括现在这个时间点，所以应该用现在时态</li>
+<li>这里不涉及到被动的语态，但涉及到「持续」的含义，所以需要用 <code>be + V-ing</code> 形式</li>
+</ul>
+<p>因此，我们需要用 <code>be</code> 动词的单三形式 <code>is</code>，跟着 <code>sell</code> 的现在分词 <code>selling</code>。这是传统语法的「现在进行式」。</p>
+<blockquote>
+<p>According to the NASA survey, the ozone layer <em>is</em> being depleted.</p>
+</blockquote>
+<ul>
+<li>动作发生的时间段是 _从臭氧层开始被消耗的时候到将来臭氧层不在被消耗的时候_，这是一个特定的时间段，所以应该用简单式</li>
+<li>这个时间段包括现在这个时间点，所以应该用现在时态</li>
+<li>这里涉及到被动的语态，所以需要用 <code>be + V-ed</code>；同时，这里也涉及到「正在发生」的含义，所以需要用 <code>be + V-ing</code> 的形态</li>
+</ul>
+<p>因此，我们需要用 <code>be</code> 动词的单三形态 <code>is</code>，同时还需要 <code>being</code> 作为 <code>V-ing</code> 部分，然后还需要 <code>deplete</code> 的过去分词 <code>depleted</code>。这是传统语法的「现在进行式被动语态」。</p>
+<h3 id="未来时态"><a href="#未来时态" class="headerlink" title="未来时态"></a>未来时态</h3><blockquote>
+<p>There <em>will be</em> a major election <em>in April</em>.</p>
+</blockquote>
+<ul>
+<li>动作发生的时间段是 _下一个四月份_，这是一个特定的时间段，所以应该用简单式</li>
+<li>这个时间段不包括现在这个时间点，且位于现在之后，所以应该用将来时态</li>
+<li>这里不涉及到被动的语态，也不涉及到「正在发生」的含义，所以不需要额外的 <code>be</code></li>
+</ul>
+<p>因此，我们需要用 <code>will</code> 来表示将来时态，同时用 <code>be</code> 的原型，在这里表示「存在」的含义。这是传统语法的「一般将来式」。</p>
+<blockquote>
+<p>Don’t call me at <em>six tomorrow</em>. I <em>will</em> still <em>be</em> sleeping <em>then</em>.</p>
+</blockquote>
+<ul>
+<li>动作发生的时间段是 _明早六点_，这是一个特定的时间段，退化为一个时间点，所以应该用简单式</li>
+<li>这个时间段不包括现在这个时间点，且位于现在之后，所以应该用将来时态</li>
+<li>这里不涉及到被动的语态，但不涉及到「正在发生」的含义，所以需要用 <code>be + V-ing</code> 的形态</li>
+</ul>
+<p>因此，我们需要用 <code>will</code> 来表示将来时态，用 <code>be</code> 动词的原型，同时接上 <code>sleep</code> 的现在分词 <code>sleeping</code>。这是传统语法的「将来进行式」。</p>
+<blockquote>
+<p>The building <em>will be</em> razed <em>next month</em>.</p>
+</blockquote>
+<ul>
+<li>动作发生的时间段是 _下个月_，这是一个特定的时间段，所以应该用简单式</li>
+<li>这个时间段不包括现在这个时间点，且位于现在之后，所以应该用将来时态</li>
+<li>这里涉及到被动的语态，所以需要用 <code>be + V-ed</code> 的形态；但不涉及到「正在发生」的含义</li>
+</ul>
+<p>因此，我们需要用 <code>will</code> 来表示将来时态，用 <code>be</code> 动词的原型，同时接上 <code>raze</code> 的过去分词 <code>razed</code>。这是传统语法的「一般将来式被动语态」。</p>
+<h2 id="完成式"><a href="#完成式" class="headerlink" title="完成式"></a>完成式</h2><p>完成式也有几个重要的特征：</p>
+<ul>
+<li><strong>完成式的动作，其发生的时间有一个明确的截止时间点，表示「在这之前」或者「至此为止」</strong></li>
+<li><strong>如果这个时间点</strong><ul>
+<li>是「现在」这个时间点，那么用现在时态</li>
+<li>是「过去」的某个时间点，那么用过去时态</li>
+<li>是「将来」的某个时间点，那么用将来时态</li>
+</ul>
+</li>
+</ul>
+<p>第一个特征，给了我们明确的信息来确定我们是否应该使用完成式（而不是简单式）。第二个特征，则为我们选择时态提供了依据。</p>
+<h3 id="现在时态-1"><a href="#现在时态-1" class="headerlink" title="现在时态"></a>现在时态</h3><blockquote>
+<p>I’m sure that I <em>have seen</em> this face somewhere.</p>
+</blockquote>
+<ul>
+<li>动作发生的时间不是一个特定的时间段，但有明确的截止时间点，所以应该用完成式</li>
+<li>截止时间点是「现在」，所以应该用现在时态</li>
+<li>这里不涉及到被动的语态，也不涉及到「持续」或者「正在发生」的含义，所以不需要额外的 <code>be</code> 动词</li>
+</ul>
+<p>因此，我们需要用 <code>have</code> 来表示完成时态，接上 <code>see</code> 的过去分词 <code>seen</code>。这是传统语法的「现在完成式」。</p>
+<blockquote>
+<p>We <em>have been</em> working overtime <em>for a week</em> to fill your order.</p>
+</blockquote>
+<ul>
+<li>动作发生的时间不是一个特定的时间段，但有明确的截止时间点（_至今已有一周_），所以应该用完成式</li>
+<li>截止时间点是「现在」，所以应该用现在时态</li>
+<li>这里不涉及到被动的语态，但涉及到「持续」的含义，所以需要用 <code>be + V-ing</code> 的形式</li>
+</ul>
+<p>因此，我们需要用 <code>have</code> 来表示完成时态，接上 <code>be</code> 的过去分词 <code>been</code>，再加上 <code>work</code> 的现在分词 <code>working</code>。这是传统语法的「现在完成进行式」。</p>
+<blockquote>
+<p>The house <em>has been</em> redecorated twice since they moved in.</p>
+</blockquote>
+<ul>
+<li>动作发生的时间不是一个特定的时间段，但有明确的截止时间点（_从他们搬入*_到现在为止***），所以应该用完成式</li>
+<li>截止时间点是「现在」，所以应该用现在时态</li>
+<li>这里涉及到被动的语态，所以需要用 <code>be + V-ed</code> 的形式；但不涉及到「持续」的含义</li>
+</ul>
+<p>因此，我们需要用 <code>have</code> 的单三形式 <code>has</code> 来表示完成时态，接上 <code>be</code> 的过去分词 <code>been</code>，在加上 <code>redecorate</code> 的过去分词 <code>redecorated</code>。这是传统语法的「现在完成式被动语态」。</p>
+<h3 id="过去时态-1"><a href="#过去时态-1" class="headerlink" title="过去时态"></a>过去时态</h3><p>一般来说，没有特别说明之时，说「在这之前」就是「在现在这个时间点之前」，所以需要用现在完成式。如果要用过去完成式，则需要有一个明确的过去时间截止点。</p>
+<blockquote>
+<p>Many soldiers <em>had died</em> from pneumonia <em>before the discovery of Penicilin</em>.</p>
+</blockquote>
+<ul>
+<li>动作发生的时间不是一个特定的时间段，但有明确的截止时间点（_青霉素被发现之前_），所以应该用完成式</li>
+<li>截止时间点是「过去」，所以应该用过去时态</li>
+<li>这里不涉及到被动的语态，也不涉及到「持续」或「正在发生」的含义，所以不需要用额外的 <code>be</code> 动词</li>
+</ul>
+<p>因此，我们需要用 <code>have</code> 的过去式 <code>had</code> 表示过去完成式，接上 <code>die</code> 的过去分词 <code>died</code> 表示实际的动作。这是传统语法的「过去完成式」。</p>
+<blockquote>
+<p>I <em>had been</em> smoking three packs of cigarettes a day <em>before I decided to quit</em>.</p>
+</blockquote>
+<ul>
+<li>动作发生的时间不是一个特定的时间段，但有明确的截止时间点（_我决定戒烟之前_），所以应该用完成式</li>
+<li>截止时间点是「过去」，所以应该用过去时态</li>
+<li>这里不涉及到被动的语态，但涉及到「持续」的含义，所以需要用 <code>be + V-ing</code> 的形式</li>
+</ul>
+<p>因此，我们需要用 <code>have</code> 的过去式 <code>had</code> 表示过去完成式，接上 <code>be</code> 的过去分词 <code>been</code> 表示进行状态，最后加上 <code>smoke</code> 的现在分词 <code>smoking</code> 来表示实际的动作。这是传统语法的「过去完成进行式」。</p>
+<blockquote>
+<p>In the World War II, Japan <em>had not been</em> defeated yet <em>by the time Germany surrendered unconditionally</em>.</p>
+</blockquote>
+<ul>
+<li>动作发生的时间不是一个特定的时间段，但有明确的截止时间点（_德国无条件投降之前_），所以应该用完成式</li>
+<li>截止时间点是「过去」，所以应该用过去时态</li>
+<li>这里涉及到被动的语态，所以需要用 <code>be + V-ed</code> 的形式；但不涉及到「持续」或「正在发生」的含义</li>
+</ul>
+<p>因此，我们需要用 <code>have</code> 的过去式 <code>had</code> 表示过去完成式，接上 <code>be</code> 的过去分词 <code>been</code> 表示被动，最后加上 <code>defeat</code> 的现在分词 <code>defeated</code> 来表示实际的动作。这是传统语法的「过去完成式被动语态」。</p>
+<h3 id="将来时态"><a href="#将来时态" class="headerlink" title="将来时态"></a>将来时态</h3><p>和完成式的过去时态一样，将来时态中的完成式需要一个位于将来的时间截止点。</p>
+<blockquote>
+<p>Next April, I <em>will have worked</em> here for 2 years.</p>
+</blockquote>
+<ul>
+<li>动作发生的时间不是一个特定的时间段，但有明确的截止时间点（_到下个四月为止_），所以应该用完成式</li>
+<li>截止时间点是「将来」，所以应该用将来时态</li>
+<li>这里不涉及到被动的语态，也不涉及到「持续」或「正在发生」的含义，所以不需要用额外的 <code>be</code> 动词</li>
+</ul>
+<p>因此，我们需要用 <code>will have</code> 表示将来完成式，接上 <code>work</code> 的过去分词 <code>worked</code> 表示实际的动作。这是传统语法的「将来完成式」。</p>
+<blockquote>
+<p>Come back at 17:00. Your car <em>will have been</em> fixed <em>by then</em>.</p>
+</blockquote>
+<ul>
+<li>动作发生的时间不是一个特定的时间段，但有明确的截止时间点（_下午五点之前_），所以应该用完成式</li>
+<li>截止时间点是「将来」，所以应该用将来时态</li>
+<li>这里涉及到被动的语态，所以需要用 <code>be + V-ed</code> 的形式；但不涉及到「持续」或「正在发生」的含义</li>
+</ul>
+<p>因此，我们需要用 <code>will have</code> 表示将来完成式，接上 <code>be</code> 的过去分词 <code>been</code> 表示被动，再加上 <code>fix</code> 的过去分词 <code>fixed</code> 表示实际的动作。这是传统语法的「将来完成式被动语态」。</p>
+<blockquote>
+<p><em>In another two more minutes</em>, she <em>will have been</em> talking on the phone for three hours.</p>
+</blockquote>
+<ul>
+<li>动作发生的时间不是一个特定的时间段，但有明确的截止时间点（_到两分钟之后_），所以应该用完成式</li>
+<li>截止时间点是「将来」，所以应该用将来时态</li>
+<li>这里不涉及到被动的语态，但不涉及到「持续」的含义，所以需要用 <code>be + V-ing</code> 的形式</li>
+</ul>
+<p>因此，我们需要用 <code>will have</code> 表示将来完成式，接上 <code>be</code> 的过去分词 <code>been</code> 表示进行，再加上 <code>talk</code> 的现在分词 <code>talking</code> 表示实际的动作。这是传统语法的「将来完成进行式」。</p>
+
+
+          <section class="single-cta">
+            <div class="reprint">
+              <div class="reprint_link">
+                <span class="reprint-meta"><i class="fas fa-link"> 本文链接: </i></span>
+                <span class="reprint-info"><a
+                    href="https://hikc.net/posts/aa58616/">https://hikc.net/posts/aa58616/</a></span>
+              </div>
+              <div class="reprint_notice">
+                <span class="reprint-meta"><i class="fas fa-closed-captioning"> 版权声明: </i></span>
+                <span class="reprint-info">本博客所有文章除特別声明外，均采用
+                  <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer"
+                    target="_blank">CC BY 4.0</a> 许可协议。转载请注明来源
+                  <a href="/" target="_blank">HIKC.NET</a>
+                  !</span>
+              </div>
+            </div>
+          </section>
+
+        </div>
+
+        <footer class="single-footer kg-width-normal">
+          <div class="single-footer-left">
+            
+            <div class="navigation navigation-previous">
+              <a class="navigation-link" href="/posts/1eec6e48/" aria-label="Previous post">
+                <svg class="icon navigation-icon">
+                  <use xlink:href="#arrow-left"></use>
+                </svg>
+              </a>
+            </div>
+            
+          </div>
+          <div class="single-footer-middle">
+            <div class="single-footer-bottom">
+              <div class="share">
+                <a class="share-link share-link-facebook"
+                  href="https://www.facebook.com/sharer.php?u=https://hikc.net/posts/aa58616/"
+                  target="_blank" rel="noopener noreferrer">
+                  <svg class="icon icon-facebook">
+                    <use xlink:href="#facebook"></use>
+                  </svg>
+                  Share
+                </a>
+                <a class="share-link share-link-twitter"
+                  href="https://twitter.com/intent/tweet?url=https://hikc.net/posts/aa58616/" target="_blank"
+                  rel="noopener noreferrer">
+                  <svg class="icon icon-twitter">
+                    <use xlink:href="#twitter"></use>
+                  </svg>
+                  Tweet
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="single-footer-right">
+            
+            <div class="navigation navigation-next">
+              <a class="navigation-link" href="/posts/4da21885/" aria-label="Next post">
+                <svg class="icon navigation-icon">
+                  <use xlink:href="#arrow-right"></use>
+                </svg>
+              </a>
+            </div>
+            
+          </div>
+        </footer>
+      </article>
+
+      
+      <div class="comment kg-width-narrow">
+    <div id="disqus_thread">
+        <button class="button button-secondary" onclick="loadDisqus();">点击加载评论</button>
+    </div>
+</div>
+
+<script>
+    // DON'T EDIT BELOW THIS LINE
+    if (themeOptions.disqus_shortname == '') {
+        document.querySelector('.comment').remove();
+    }
+
+    var disqus_config = function () {
+        this.page.url = 'https://hikc.net/posts/aa58616/';
+        this.page.identifier = '/posts/aa58616/';
+    };
+
+    function loadDisqus() {
+        var d = document, s = d.createElement('script');
+        s.src = 'https://' + themeOptions.disqus_shortname + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    };
+</script>
+<noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      
+    </main>
+  </div>
+</div>
+      <footer class="site-footer">
+    <div class="social">
+        <a class="social-item social-item-facebook" href="https://www.facebook.com/kaicheng.jiang.5/" target="_blank"
+            rel="noopener noreferrer" aria-label="Facebook">
+            <span style="font-size: 24px; color: #1877f2;">
+                <i class="fab fa-facebook-square"></i>
+            </span>
+        </a>
+        <a class="social-item social-item-email" href="mailto:jiangkch@outlook.com" target="_blank" rel="noopener noreferrer"
+            aria-label="Email">
+            <span style="font-size: 24px; color: #d93025;">
+                <i class="fas fa-envelope-square"></i>
+            </span>
+        </a>
+        <a class="social-item social-item-rss"
+            href="/atom.xml" target="_blank"
+            rel="noopener noreferrer" aria-label="RSS">
+            <span style="font-size: 24px; color: #ff572f;">
+                <i class="fas fa-rss-square"></i>
+            </span>
+        </a>
+    </div>
+
+    <div class="copyright">
+        &copy; 2019-2020 <a href="https://hikc.net/" target="_blank" rel="noopener noreferrer">HIKC.NET</a>. All Rights Reserved.
+    </div>
+
+    <nav class="footer-nav">
+        <a class="menu-item menu-item-home menu-item-current" href="/">Home</a>
+        <a class="menu-item menu-item-archive menu-item-current" href="/archives">Archives</a>
+        <a class="menu-item menu-item-about" href="/about">About</a>
+
+        <a class="menu-item js-theme" href="#" data-system="System theme" data-dark="Dark theme"
+            data-light="Light theme">
+            <svg class="icon theme-icon theme-icon-system">
+                <use xlink:href="#circle-half-full"></use>
+            </svg>
+            <svg class="icon theme-icon theme-icon-dark">
+                <use xlink:href="#brightness-2"></use>
+            </svg>
+            <svg class="icon theme-icon theme-icon-light">
+                <use xlink:href="#white-balance-sunny"></use>
+            </svg>
+            <span class="theme-text">System theme</span>
+        </a>
+    </nav>
+    <div class="site-info">
+        <div class="github-badge">
+            <a style="color: #fff" rel="license" href="https://hexo.io/" target="_blank" title="由 Hexo 强力驱动">
+                <span class="badge-subject">Powered</span><span class="badge-value bg-blue">Hexo</span></a>
+        </div>
+        <div class="github-badge">
+            <a style="color: #fff" rel="license" href="https://github.com/" target="_blank"
+                title="静态网页托管于 GitHub Pages 和 Coding Pages">
+                <span class="badge-subject">Hosted</span><span class="badge-value bg-lightgrey">GitHub &
+                    Coding</span></a>
+        </div>
+        <div class="github-badge">
+            <a style="color: #fff" rel="license" href="https://www.jsdelivr.com/" target="_blank"
+                title="jsDelivr 提供 CDN 加速服务">
+                <span class="badge-subject">CDN</span><span class="badge-value bg-orange">jsDelivr</span></a>
+        </div>
+        <div class="github-badge">
+            <a style="color: #fff" rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"
+                title="本站点采用知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议进行许可">
+                <span class="badge-subject"><i class="far fa-closed-captioning"></i></span><span
+                    class="badge-value bg-brightgreen">BY-NC-SA 4.0</span></a>
+        </div>
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+        <div class="github-badge">
+            <span class="badge-subject">UV</span><span class="badge-value bg-blueviolet" id="busuanzi_value_site_uv"></span>
+        </div>
+        <div class="github-badge">
+            <span class="badge-subject">PV</span><span class="badge-value bg-firebrick" id="busuanzi_value_site_pv"></span>
+        </div>
+    </div>
+</footer>
+
+      <div class="modal-overlay">
+  <div class="modal modal-search">
+    <div class="form-wrapper">
+      <input class="modal-input search-input" type="text" placeholder="输入关键词..." id="local-search-input">
+      <button class="form-button search-button" aria-label="Search">
+        <svg class="icon icon-search">
+          <use xlink:href="#magnify"></use>
+        </svg>
+        <svg class="icon icon-close">
+          <use xlink:href="#window-close"></use>
+        </svg>
+      </button>
+    </div>
+
+    <div class="popular-wrapper">
+      <h4 class="popular-title">搜索排行</h4>
+      <div class="popular-feed">
+        <a class="popular" href="/tags/hexo/">Hexo</a>
+        <a class="popular" href="/tags/Markdown/">Markdown</a>
+        <a class="popular" href="/tags/英语/">英语</a>
+      </div>
+    </div>
+
+    <div class="search-result" id="local-search-result"></div>
+
+  </div>
+
+  <button class="button-icon modal-close" aria-label="Close">
+    <svg class="icon icon-close">
+      <use xlink:href="#window-close"></use>
+    </svg>
+  </button>
+</div>
+
+<script type="text/javascript" id="local.search.active">
+  var inputArea = document.querySelector("#local-search-input");
+  var desktopSearchButton = document.querySelector("#local-search-open_Desktop");
+  var mobileSearchButton = document.querySelector("#local-search-open_Mobile");
+  desktopSearchButton.onclick = function () { getSearchFile(); this.onclick = null }
+  mobileSearchButton.onclick = function () { getSearchFile(); this.onclick = null }
+  inputArea.onkeydown = function () { if (event.keyCode == 13) return false }
+</script>
+    </div>
+  </div>
+
+  <script>
+    var body = document.querySelector('body');
+    if (window.innerWidth > body.clientWidth + 5) {
+      document.documentElement.style.setProperty('--scrollbar', (window.innerWidth - body.clientWidth) + 'px');
+    }
+  </script>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/b61238bc7b.js" crossorigin="anonymous"></script>
+  
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/main.min.js"></script>
+    
+    <script src="/js/search.js"></script>
+    
+    
+</body>
+</html>

@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Description-->
+    
+    <meta name="description"
+        content="自 2014 年，始终博客就开始使用 Hexo 这个静态站点生成工具了；犹记得当时参考的文章，是 Bruce 的 Hexo 你的博客。
+始终博客采用的主题，是 iissan 创建的 NexT。NexT 主题默认提供了两个站内搜索解决方案：swiftype 和 tinysou。早年时候，始终博客采用了">
+    
+
+    <!--Author-->
+    
+    <meta name="author" content="K.C.">
+    
+
+    <!--Open Graph Title-->
+    
+    <meta property="og:title" content="为 Hexo 创建本地搜索引擎" />
+    
+
+    <!--Open Graph Description-->
+    
+
+    <!--Open Graph Site Name-->
+    <meta property="og:site_name" content="K.C&#39;s Blog" />
+
+    <!--Type page-->
+    
+    <meta property="og:type" content="article" />
+    
+
+    <!--Page Cover-->
+    
+
+    <meta name="twitter:card" content="summary" />
+    
+
+    <!-- Title -->
+    <title>为 Hexo 创建本地搜索引擎 [ K.C&#39;s Blog ]</title>
+
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:400,400i,700,700i,800">
+
+    <!-- Custom CSS -->
+    
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/Normalize.min.css">
+    
+    <link rel="stylesheet" href="/css/screen.css">
+    
+    <link rel="stylesheet" href="/css/footprint.css">
+    
+    
+
+    <!-- Google Analytics -->
+    
+
+
+
+    <script>
+        var themeOptions = {
+            disqus_shortname: 'hikc',
+            white_logo: '',
+            white_icon: '',
+        };
+    </script>
+    <!--
+    <script>
+        var localTheme = localStorage.getItem('dawn_theme');
+        switch (localTheme) {
+            case 'dark':
+                document.documentElement.classList.add('theme-dark');
+                break;
+            case 'light':
+                document.documentElement.classList.add('theme-light');
+                break;
+            default:
+                break;
+        }
+    </script>
+ -->
+
+
+
+
+    <link rel="alternate" type="application/rss+xml" title="hikc.net" href="/atom.xml" />
+
+<meta name="generator" content="Hexo 5.4.0"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+
+
+
+<body class="post-template">
+  <svg width="0" height="0" style="display: none;">
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="arrow-left">
+      <path d="M26.667 14.667v2.667h-16L18 24.667l-1.893 1.893L5.547 16l10.56-10.56L18 7.333l-7.333 7.333h16z"></path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="arrow-right">
+      <path d="M5.333 14.667v2.667h16L14 24.667l1.893 1.893L26.453 16 15.893 5.44 14 7.333l7.333 7.333h-16z"></path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="brightness-2">
+      <path
+        d="M13.333 2.667c-2.427 0-4.707.667-6.667 1.8 4 2.307 6.667 6.6 6.667 11.533s-2.667 9.227-6.667 11.533c1.96 1.133 4.24 1.8 6.667 1.8 7.36 0 13.333-5.973 13.333-13.333S20.693 2.667 13.333 2.667z">
+      </path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="chevron-left">
+      <path d="M20.547 22.107L14.44 16l6.107-6.12L18.667 8l-8 8 8 8 1.88-1.893z"></path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="chevron-right">
+      <path d="M11.453 22.107L17.56 16l-6.107-6.12L13.333 8l8 8-8 8-1.88-1.893z"></path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="circle-half-full">
+      <path
+        d="M16 2.667c-7.36 0-13.333 5.973-13.333 13.333s5.973 13.333 13.333 13.333c7.36 0 13.333-5.973 13.333-13.333s-5.973-13.333-13.333-13.333zM16 5.333c5.893 0 10.667 4.773 10.667 10.667s-4.773 10.667-10.667 10.667v-21.333z">
+      </path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="dots-horizontal">
+      <path
+        d="M21.333 16c0-1.473 1.194-2.667 2.667-2.667v0c1.473 0 2.667 1.194 2.667 2.667v0c0 1.473-1.194 2.667-2.667 2.667v0c-1.473 0-2.667-1.194-2.667-2.667v0zM13.333 16c0-1.473 1.194-2.667 2.667-2.667v0c1.473 0 2.667 1.194 2.667 2.667v0c0 1.473-1.194 2.667-2.667 2.667v0c-1.473 0-2.667-1.194-2.667-2.667v0zM5.333 16c0-1.473 1.194-2.667 2.667-2.667v0c1.473 0 2.667 1.194 2.667 2.667v0c0 1.473-1.194 2.667-2.667 2.667v0c-1.473 0-2.667-1.194-2.667-2.667v0z">
+      </path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="facebook-box">
+      <path
+        d="M6.667 4h18.667c1.467 0 2.667 1.2 2.667 2.667v18.667c0 1.467-1.2 2.667-2.667 2.667H6.667A2.675 2.675 0 0 1 4 25.334V6.667C4 5.2 5.2 4 6.667 4zM24 6.667h-3.333A4.672 4.672 0 0 0 16 11.334v3.333h-2.667v4H16V28h4v-9.333h4v-4h-4V12c0-.733.6-1.333 1.333-1.333H24v-4z">
+      </path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="facebook">
+      <path
+        d="M22.667 2.667V8H20c-.92 0-1.333 1.08-1.333 2v3.333h4v5.333h-4v10.667h-5.333V18.666h-4v-5.333h4V8a5.332 5.332 0 0 1 5.333-5.333h4z">
+      </path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="linkedin">
+      <path
+        d="M25.333 4c1.473 0 2.667 1.194 2.667 2.667v0 18.667c0 1.473-1.194 2.667-2.667 2.667v0h-18.667c-1.473 0-2.667-1.194-2.667-2.667v0-18.667c0-1.473 1.194-2.667 2.667-2.667v0h18.667zM24.667 24.667v-7.067c0-2.401-1.946-4.347-4.347-4.347v0c-1.133 0-2.453 0.693-3.093 1.733v-1.48h-3.72v11.16h3.72v-6.573c0-1.027 0.827-1.867 1.853-1.867 1.031 0 1.867 0.836 1.867 1.867v0 6.573h3.72zM9.173 11.413c1.237 0 2.24-1.003 2.24-2.24v0c0-1.24-1-2.253-2.24-2.253-1.244 0-2.253 1.009-2.253 2.253v0c0 1.24 1.013 2.24 2.253 2.24zM11.027 24.667v-11.16h-3.693v11.16h3.693z">
+      </path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" id="loader">
+      <path opacity="0.3" fill="currentColor"
+        d="M20.201,5.169c-8.254,0-14.946,6.692-14.946,14.946c0,8.255,6.692,14.946,14.946,14.946 s14.946-6.691,14.946-14.946C35.146,11.861,28.455,5.169,20.201,5.169z M20.201,31.749c-6.425,0-11.634-5.208-11.634-11.634 c0-6.425,5.209-11.634,11.634-11.634c6.425,0,11.633,5.209,11.633,11.634C31.834,26.541,26.626,31.749,20.201,31.749z" />
+      <path fill="currentColor"
+        d="M26.013,10.047l1.654-2.866c-2.198-1.272-4.743-2.012-7.466-2.012h0v3.312h0 C22.32,8.481,24.301,9.057,26.013,10.047z">
+        <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 20 20" to="360 20 20"
+          dur="0.5s" repeatCount="indefinite" />
+      </path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="magnify">
+      <path
+        d="M12.667 4a8.667 8.667 0 0 1 8.667 8.667c0 2.147-.787 4.12-2.08 5.64l.36.36h1.053l6.667 6.667-2 2-6.667-6.667v-1.053l-.36-.36a8.689 8.689 0 0 1-5.64 2.08C7.88 21.334 4 17.454 4 12.667S7.88 4 12.667 4zm0 2.667c-3.333 0-6 2.667-6 6s2.667 6 6 6 6-2.667 6-6-2.667-6-6-6z">
+      </path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="menu-down">
+      <path d="M9.333 13.333L16 20l6.667-6.667H9.334z"></path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="rss-box">
+      <path
+        d="M6.667 4h18.667c1.467 0 2.667 1.2 2.667 2.667v18.667c0 1.467-1.2 2.667-2.667 2.667H6.667A2.675 2.675 0 0 1 4 25.334V6.667C4 5.2 5.2 4 6.667 4zM10 20c-1.107 0-2 .893-2 2s.893 2 2 2 2-.893 2-2-.893-2-2-2zm-2-6.667V16c4.413 0 8 3.587 8 8h2.667c0-5.893-4.773-10.667-10.667-10.667zM8 8v2.667c7.36 0 13.333 5.973 13.333 13.333H24c0-8.84-7.16-16-16-16z">
+      </path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="star">
+      <path
+        d="M16 23.027L24.24 28l-2.187-9.373 7.28-6.307-9.587-.827-3.747-8.827-3.747 8.827-9.587.827 7.267 6.307L7.759 28l8.24-4.973z">
+      </path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="table-of-contents">
+      <path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"></path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="twitter-box">
+      <path
+        d="M6.667 4h18.667c1.467 0 2.667 1.2 2.667 2.667v18.667c0 1.467-1.2 2.667-2.667 2.667H6.667A2.675 2.675 0 0 1 4 25.334V6.667C4 5.2 5.2 4 6.667 4zm16.946 8.44c.64-.533 1.387-1.173 1.72-1.88-.547.28-1.2.453-1.92.547.667-.48 1.213-1.107 1.493-1.96-.693.373-1.4.693-2.28.853-2.067-2.493-7.013-.467-6.133 3.267-3.48-.213-5.6-1.787-7.36-3.72-1 1.627-.133 4.093 1.053 4.773-.613-.04-1.08-.227-1.52-.44.053 2.053 1.187 3.04 2.773 3.573a4.47 4.47 0 0 1-1.52.04c.493 1.427 1.52 2.32 3.28 2.507-1.2 1.013-3.413 1.72-5.2 1.44 1.533.973 3.28 1.747 5.707 1.64 5.88-.267 9.813-4.48 9.907-10.64z">
+      </path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="twitter">
+      <path
+        d="M29.947 8a11.423 11.423 0 0 1-3.28.92 5.738 5.738 0 0 0 2.507-3.173 11.52 11.52 0 0 1-3.627 1.4C24.494 6 23.014 5.334 21.334 5.334c-3.133 0-5.693 2.56-5.693 5.72 0 .453.053.893.147 1.307A16.261 16.261 0 0 1 4.001 6.388a5.663 5.663 0 0 0-.773 2.867c0 1.987 1 3.747 2.547 4.747-.947 0-1.827-.267-2.6-.667v.04a5.724 5.724 0 0 0 4.587 5.613 5.644 5.644 0 0 1-2.574.093c.72 2.253 2.813 3.933 5.333 3.973-1.947 1.547-4.413 2.453-7.107 2.453-.453 0-.907-.027-1.36-.08A16.19 16.19 0 0 0 10.827 28c10.507 0 16.28-8.72 16.28-16.28 0-.253 0-.493-.013-.747A11.42 11.42 0 0 0 29.947 8z">
+      </path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="white-balance-sunny">
+      <path
+        d="M4.733 24.72l1.88 1.88 2.4-2.387L7.12 22.32zm9.934 5.213h2.667V26h-2.667zM16 7.333c-4.413 0-8 3.587-8 8s3.587 8 8 8 8-3.587 8-8c0-4.427-3.587-8-8-8zm10.667 9.334h4V14h-4zm-3.68 7.546l2.4 2.387 1.88-1.88-2.387-2.4zm4.28-18.266l-1.88-1.88-2.4 2.387 1.893 1.893zM17.333.733h-2.667v3.933h2.667zM5.333 14h-4v2.667h4zm3.68-7.547l-2.4-2.387-1.88 1.88 2.387 2.4 1.893-1.893z">
+      </path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="window-close">
+      <path
+        d="M17.947 16l7.387 7.387v1.947h-1.947L16 17.947l-7.387 7.387H6.666v-1.947L14.053 16 6.666 8.613V6.666h1.947L16 14.053l7.387-7.387h1.947v1.947L17.947 16z">
+      </path>
+    </symbol>
+  </svg>
+  <div class="container">
+    <div class="site">
+      <header class="site-header">
+    <div class="header-left">
+        <a class="logo" href="/">
+            <span class="logo-text">HIKC.NET</span>
+        </a>
+    </div>
+    <nav class="main-nav hidden-xs hidden-sm hidden-md">
+        
+        <a class="menu-item" href="/">首页</a>
+        
+        <a class="menu-item" href="/archives">归档</a>
+        
+        <a class="menu-item" href="/about">关于</a>
+        
+        <a class="menu-item" href="/...">More links</a>
+        
+        <a class="menu-item" href="/friends">友链</a>
+        
+
+        <button class="button-icon menu-item-button js-modal" data-modal="search" aria-label="Search" id="local-search-open_Desktop">
+            <svg class="icon">
+                <use xlink:href="#magnify"></use>
+            </svg>
+        </button>
+    </nav>
+
+    <button class="button-icon hidden-lg hidden-xl js-modal" data-modal="search" aria-label="Search" id="local-search-open_Mobile">
+        <svg class="icon">
+            <use xlink:href="#magnify"></use>
+        </svg>
+    </button>
+    <div class="burger hidden-lg hidden-xl">
+        <div class="burger-bar"></div>
+        <div class="burger-bar"></div>
+    </div>
+
+    <div class="mobile-menu hidden-lg hidden-xl">
+        <div class="container">
+            <nav class="mobile-nav">
+                
+                <a class="menu-item" href="/">首页</a>
+                
+                <a class="menu-item" href="/archives">归档</a>
+                
+                <a class="menu-item" href="/about">关于</a>
+                
+                <a class="menu-item" href="/...">More links</a>
+                
+                <a class="menu-item" href="/friends">友链</a>
+                
+
+                <a class="menu-item" target="_blank" rel="noopener" href="https://github.com/">Github</a>
+                <a class="menu-item menu-item-cta" href="/atom.xml">RSS</a>
+            </nav>
+        </div>
+    </div>
+    <div class="header-right hidden-xs hidden-sm hidden-md">
+        <a class="menu-item" target="_blank" rel="noopener" href="https://github.com/">Github</a>
+        <a class="menu-item menu-item-cta" href="/atom.xml">RSS</a>
+    </div>
+</header>
+      <header class="sticky kg-width-full">
+  <div class="sticky-title">为 Hexo 创建本地搜索引擎</div>
+  <button class="button-icon sticky-toc-button" aria-label="Table of Contents">
+    <svg class="icon">
+      <use xlink:href="#table-of-contents"></use>
+    </svg>
+    <div class="sticky-toc"></div>
+  </button>
+  <div class="sticky-track">
+    <div class="sticky-progress"></div>
+  </div>
+</header>
+
+<div class="site-content">
+  <div class="content-area">
+    <main class="site-main">
+      <article class="single post kg-width-narrow">
+        <header class="single-header">
+          <div class="single-meta">
+            <span class="single-meta-item single-meta-date">
+              <time datetime="2020-07-02">
+                2020-07-02
+              </time>
+            </span>
+            <span class="single-meta-item single-meta-length">
+              9 min read
+            </span>
+            <span class="single-meta-item single-meta-tag">
+              
+              <a class="post-tag" href="/tags/hexo/">#hexo</a>
+              
+            </span>
+          </div>
+          <h1 class="single-title">为 Hexo 创建本地搜索引擎</h1>
+          <div class="single-excerpt">
+            
+          </div>
+        </header>
+
+        
+        
+        <div class="single-media kg-width-narrow u-placeholder horizontal">
+          <img class="lazyload u-object-fit" src="https://www.hkgseo.com/wp-content/uploads/2019/11/%E4%BA%92%E8%81%AF%E7%B6%B2%E5%92%8C%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E6%98%AF%E5%A6%82%E4%BD%95%E5%B7%A5%E4%BD%9C%E7%9A%84.png" alt="为 Hexo 创建本地搜索引擎">
+        </div>
+        
+
+        <div class="single-content u-text-format">
+          <p>自 2014 年，始终博客就开始使用 <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/index.html">Hexo</a> 这个静态站点生成工具了；犹记得当时参考的文章，是 Bruce 的 <a target="_blank" rel="noopener" href="http://ibruce.info/2013/11/22/hexo-your-blog/">Hexo 你的博客</a>。</p>
+<p>始终博客采用的主题，是 <a target="_blank" rel="noopener" href="https://github.com/iissnan/">iissan</a> 创建的 <a target="_blank" rel="noopener" href="https://github.com/iissnan/hexo-theme-next">NexT</a>。NexT 主题默认提供了两个站内搜索解决方案：swiftype 和 tinysou。早年时候，始终博客采用了 swiftype 作为站内搜索方案；但后来因为 swiftype 改版而失效，就放弃了。</p>
+<p>近期，随着始终博客的文章数量不断增加，陆续有友人建议应该为博客加上搜索功能。然而，出于几方面的考虑，我一直没有加上搜索功能：</p>
+<ul>
+<li>不愿意受限于第三方服务，第三方服务可能说变就变——曾经的各种博客网站，以及 swiftype 就是如此；</li>
+<li>不喜欢第三方服务的样式，与博客样式脱节；</li>
+<li>使用第三方服务，需要应用第三方的 JavaScript 脚本等内容，可能存在安全风险。</li>
+</ul>
+<p>经过检索之后，我发现 Hexo 已有可以接受的解决方案了。本文来介绍如何在 Hexo 博客中建立自己的本地搜索引擎。</p>
+<h2 id="思路分析"><a href="#思路分析" class="headerlink" title="思路分析"></a>思路分析</h2><p>对于大型搜索引擎来说，在抓取并处理好网页之后，就要建立所谓的「倒排索引」了。所谓倒排索引，指的是以检索词的 term 为键，以包含该 term 的文档列表为值。如此一来，我们就可以根据检索词中的各个 term，获取若干列表。而后，对这些列表求交集，就能得到「包含检索词中所有 term」的文档了。</p>
+<p>在个人网站上，特别是 Hexo 生成的静态站点，做类似的工作是不太容易的。这里原因有几点，分列如下</p>
+<ul>
+<li>Hexo 生成的是静态站点，因此无法利用服务器做数据库的存储和相关计算；</li>
+<li>这就制约了倒排索引的存储和求交；</li>
+<li>另外一方面，制作倒排索引的过程，需要应用完善的 NLP 分词，这一工程量相对巨大。</li>
+</ul>
+<p>考虑到我们无法在服务器上做数据库存储，我们就必须以文件的形式保存索引，让用户以浏览器下载该文件。此外，考虑到我们无法在服务器上做计算，我们就必须依赖可在浏览器上执行的代码，处理用户的检索任务。因此，我们说，仿照大型搜索引擎制作站内搜索，对于静态站点来说，是不现实的。</p>
+<p>那么，我们可以怎样做呢？既然标准的方案无法达成，那我们就只能退而求其次。</p>
+<p>首先，不管怎样「求其次」，都必须要有一个索引文件。这是因为，在索引文件当中进行各种操作，总是要比直接对网页页面进行操作来得要方便和快捷的。因此，首先我们需要一个能够嵌入 Hexo 的工具，方便地生成这样的索引文件。其次，有了索引，我们需要一个有效的算法：根据用户输入的检索词，返回包含检索词的文章列表。考虑到这样的算法需要在用户的浏览器上执行，我们选择使用 JavaScript 和 jQuery 来实现。接下来，为了与用户交互：接受检索词和返回结果；我们需要在页面的合适位置展示搜索框和输出结果。最后，还有一些细节问题需要处理。例如说，搜索框和输出结果的样式要如何设计；例如说，索引文件通常比较大，随页面一起下载会导致页面加载缓慢，要如何解决这个问题。</p>
+<p>我们依次来解决这些问题。</p>
+<h2 id="用-hexo-generator-search-生成索引"><a href="#用-hexo-generator-search-生成索引" class="headerlink" title="用 hexo-generator-search 生成索引"></a>用 <code>hexo-generator-search</code> 生成索引</h2><p>HaHack 参考 Christian Fei 的 <a target="_blank" rel="noopener" href="https://github.com/christian-fei/Simple-Jekyll-Search">Simple Jekyll Search</a> 实现了名为 <code>hexo-generator-search</code> 的生成器。安装该生成器之后，在执行 <code>hexo generate</code> 的过程中，会按照配置生成一个 XML 文件，用于保存全站的文档数据。这个 XML 文件只是简单地做了数据的结构化存储，而完全没有考虑分词、倒排等问题。</p>
+<p>安装 <code>hexo-generator-search</code> 非常简单，只需要在 Hexo 项目目录下执行下列命令即可。</p>
+<pre class=" language-bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> --save hexo-generator-search
+</code></pre>
+<p>如此一来，我们只需在站点配置文件 <code>_config.yml</code> 当中写入如下配置，即可为全站的文档生成索引文件了。</p>
+<pre class=" language-bash"><code class="language-bash">search:
+  path: search.xml
+  field: post
+</code></pre>
+<p>具体来说，<code>hexo-generator-search</code> 会为全站所有 <code>post</code> 类型的页面生成结构化的数据，并保存在本站的 <code>/search.xml</code> 当中。若想让 <code>page</code> 类型的页面也纳入索引，则可以将 <code>field</code> 的值修改为 <code>all</code>。</p>
+<h2 id="用-JavaScript-和-jQuery-实现检索算法"><a href="#用-JavaScript-和-jQuery-实现检索算法" class="headerlink" title="用 JavaScript 和 jQuery 实现检索算法"></a>用 JavaScript 和 jQuery 实现检索算法</h2><p>另外一方面，HaHack 建议以 jQuery 的文本匹配为基础，在前端界面上运行站内搜索。主要的处理流程是：</p>
+<ul>
+<li>载入 <code>search.xml</code>；</li>
+<li>解析 <code>search.xml</code>；</li>
+<li>解析检索词；</li>
+<li>在索引中进行字符串匹配；</li>
+<li>展现结果。</li>
+</ul>
+<p>我对官方的版本进行了少许的修改（后详），并加入了注释。这样应该相对比较好理解了。你可以在 <a target="_blank" rel="noopener" href="https://github.com/Liam0205/hexo-search-plugin-snippets/blob/master/snippets/search.js">GitHub</a> 上看到我修改的版本。</p>
+<blockquote>
+<p>需要注意的是，<code>search.js</code> 依赖 jQuery。因此，你需要在引入 <code>search.js</code> 之前，引入 jQuery 的脚本。比如，你可以在 head 部分这样做：<code>&lt;script src=&quot;//cdn.bootcss.com/jquery/3.2.1/jquery.min.js&quot;&gt;&lt;/script&gt;</code>。</p>
+</blockquote>
+<h2 id="在合适的位置展示搜索框"><a href="#在合适的位置展示搜索框" class="headerlink" title="在合适的位置展示搜索框"></a>在合适的位置展示搜索框</h2><p>接下来，我们需要在合适的位置，呈现一个搜索框。</p>
+<pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>form</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>site-search-form<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>local-search-input<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>st-search-input<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>form</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>local-search-result<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>local-search-result-cls<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+</code></pre>
+<p>此处，<code>local-search-input</code> 是一个输入框，用于接收用户输入的检索词；<code>local-search-result</code> 是用于展现搜索结果的 <code>div</code> 标签。这部分代码，我也已上传到 <a target="_blank" rel="noopener" href="https://github.com/Liam0205/hexo-search-plugin-snippets/blob/master/snippets/search.swig">GitHub</a>。</p>
+<h2 id="其他一些细节"><a href="#其他一些细节" class="headerlink" title="其他一些细节"></a>其他一些细节</h2><h3 id="调用函数"><a href="#调用函数" class="headerlink" title="调用函数"></a>调用函数</h3><p>现在，我们已经有了索引文件、搜索算法和搜索框。但是，现在而言，搜索框是孤立的：用户在搜索框中输入内容，并不会触发搜索算法。换而言之，搜索函数并没有调用。因此，我们需要调用定义在 <code>search.js</code> 当中定义的 <code>searchFunc</code>。</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">var</span> path <span class="token operator">=</span> <span class="token string">"/search.xml"</span><span class="token punctuation">;</span>
+<span class="token function">searchFunc</span><span class="token punctuation">(</span>path<span class="token punctuation">,</span> <span class="token string">'local-search-input'</span><span class="token punctuation">,</span> <span class="token string">'local-search-result'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h3 id="在何时的时候触发搜索函数"><a href="#在何时的时候触发搜索函数" class="headerlink" title="在何时的时候触发搜索函数"></a>在何时的时候触发搜索函数</h3><p>像上面这样调用搜索函数，有一个潜在的问题。调用搜索函数时，首先会尝试载入并解析 <code>search.xml</code> 文件。这个文件包含了站点里所有博文的所有内容；因此，通常来说它的体积非常大。这样一来，如果不做任何限制，函数将在网页加载时被调用；因而，体积庞大的索引文件也将在网页加载的时候引入。这会导致网页整体加载的速度非常缓慢，对用户体验是一种伤害。</p>
+<p>因此，我们会考虑，在激活搜索框时，我们才去调用搜索函数。</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">var</span> inputArea       <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">"#local-search-input"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+inputArea<span class="token punctuation">.</span>onclick   <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span> <span class="token function">getSearchFile</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+</code></pre>
+<p>此处，我们通过 <code>inputArea</code> 这个变量，监控搜索框的状态。只有当用户用鼠标点击搜索框时，才会触发 <code>getSearchFile</code> 函数，载入索引文件并执行 <code>searchFunc</code>。</p>
+<blockquote>
+<p><code>getSearchFile</code> 函数定义在 <code>search.js</code> 脚本当中了。</p>
+</blockquote>
+<p>不过，这还不够。因为，如此一来，每次用户点击搜索框时，都会触发一次 <code>searchFunc</code> 函数，并加载一次 <code>search.xml</code> 索引文件。我们期待的是，只有当用户第一次点击搜索框之后，才去下载索引文件；之后的搜索行为，直接复用上一次加载的文件即可。</p>
+<p>为此，我们需要在执行好 <code>getSearchFile</code> 函数之后，禁用 <code>onclick</code> 时间的 handler。</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">var</span> inputArea       <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">"#local-search-input"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+inputArea<span class="token punctuation">.</span>onclick   <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span> <span class="token function">getSearchFile</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token keyword">this</span><span class="token punctuation">.</span>onclick <span class="token operator">=</span> <span class="token keyword">null</span> <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+</code></pre>
+<h3 id="在搜索框中屏蔽回车"><a href="#在搜索框中屏蔽回车" class="headerlink" title="在搜索框中屏蔽回车"></a>在搜索框中屏蔽回车</h3><p>由于我们在搜索框中使用了 <code>input</code> 标签。这是一个表单，但我们不希望它具有一些表单的行为。例如说，我们的搜索结果是实时呈现的；我们不希望用户在输入检索词之后，误按回车键，导致页面刷新。</p>
+<p>为此，我们可以这样做。</p>
+<pre class=" language-javascript"><code class="language-javascript">inputArea<span class="token punctuation">.</span>onkeydown <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span> <span class="token keyword">if</span><span class="token punctuation">(</span>event<span class="token punctuation">.</span>keyCode <span class="token operator">==</span> <span class="token number">13</span><span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token boolean">false</span> <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+</code></pre>
+<h3 id="在加载索引文件时，给用户一个提示"><a href="#在加载索引文件时，给用户一个提示" class="headerlink" title="在加载索引文件时，给用户一个提示"></a>在加载索引文件时，给用户一个提示</h3><p>我们为了保护页面加载的速度，将加载索引文件的过程，后移到用户点击搜索框时进行。然而，如前所述，索引文件通常是比较大的；加载并解析索引文件通常会耗费不少时间。在这个过程中，用户可能已经输入了一些检索词；这些检索词，会因为尚未加载完毕索引文件，而得不到任何的检索结果。这当然是不合适的。</p>
+<p>因此，我们需要在加载和解析索引文件的过程中，给用户一个清晰的提示。为此，我们需要修改 <code>search.js</code> 脚本。</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">var</span> $resultContent <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'local-search-result'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+$resultContent<span class="token punctuation">.</span>innerHTML <span class="token operator">=</span> BTN <span class="token operator">+</span> <span class="token string">"&lt;ul>&lt;span class='local-search-empty'>首次搜索，正在载入索引文件，请稍后……&lt;span>&lt;/ul>"</span><span class="token punctuation">;</span>
+</code></pre>
+<p>将这段代码放在加载和解析索引文件之前，就能在 <code>local-search-result</code> 中提示「正在载入索引文件」了。</p>
+<h3 id="样式表"><a href="#样式表" class="headerlink" title="样式表"></a>样式表</h3><p>最后，我们可以通过样式表来控制这一系列内容的呈现形式。始终博客使用的样式表可以在 <a target="_blank" rel="noopener" href="https://github.com/Liam0205/hexo-search-plugin-snippets/blob/master/snippets/search.stylus">GitHub</a> 上找到。</p>
+<hr>
+<p>做完了这些工作，就可以查看效果啦。始终博客的搜索框位于页面的右上角。</p>
+<p>参考资料：</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="http://hahack.com/codes/local-search-engine-for-hexo/">http://hahack.com/codes/local-search-engine-for-hexo/</a></li>
+<li><a target="_blank" rel="noopener" href="http://moxfive.xyz/2016/05/31/hexo-local-search/">http://moxfive.xyz/2016/05/31/hexo-local-search/</a></li>
+<li><a target="_blank" rel="noopener" href="http://www.barretlee.com/blog/2017/06/04/hexo-search-insite/">http://www.barretlee.com/blog/2017/06/04/hexo-search-insite/</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/barretlee/hexo-search-plugin-snippets">https://github.com/barretlee/hexo-search-plugin-snippets</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/Liam0205/hexo-search-plugin-snippets">https://github.com/Liam0205/hexo-search-plugin-snippets</a></li>
+</ul>
+
+
+          <section class="single-cta">
+            <div class="reprint">
+              <div class="reprint_link">
+                <span class="reprint-meta"><i class="fas fa-link"> 本文链接: </i></span>
+                <span class="reprint-info"><a
+                    href="https://hikc.net/posts/a67ef931/">https://hikc.net/posts/a67ef931/</a></span>
+              </div>
+              <div class="reprint_notice">
+                <span class="reprint-meta"><i class="fas fa-closed-captioning"> 版权声明: </i></span>
+                <span class="reprint-info">本博客所有文章除特別声明外，均采用
+                  <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer"
+                    target="_blank">CC BY 4.0</a> 许可协议。转载请注明来源
+                  <a href="/" target="_blank">HIKC.NET</a>
+                  !</span>
+              </div>
+            </div>
+          </section>
+
+        </div>
+
+        <footer class="single-footer kg-width-normal">
+          <div class="single-footer-left">
+            
+          </div>
+          <div class="single-footer-middle">
+            <div class="single-footer-bottom">
+              <div class="share">
+                <a class="share-link share-link-facebook"
+                  href="https://www.facebook.com/sharer.php?u=https://hikc.net/posts/a67ef931/"
+                  target="_blank" rel="noopener noreferrer">
+                  <svg class="icon icon-facebook">
+                    <use xlink:href="#facebook"></use>
+                  </svg>
+                  Share
+                </a>
+                <a class="share-link share-link-twitter"
+                  href="https://twitter.com/intent/tweet?url=https://hikc.net/posts/a67ef931/" target="_blank"
+                  rel="noopener noreferrer">
+                  <svg class="icon icon-twitter">
+                    <use xlink:href="#twitter"></use>
+                  </svg>
+                  Tweet
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="single-footer-right">
+            
+            <div class="navigation navigation-next">
+              <a class="navigation-link" href="/posts/b9d53580/" aria-label="Next post">
+                <svg class="icon navigation-icon">
+                  <use xlink:href="#arrow-right"></use>
+                </svg>
+              </a>
+            </div>
+            
+          </div>
+        </footer>
+      </article>
+
+      
+      <div class="comment kg-width-narrow">
+    <div id="disqus_thread">
+        <button class="button button-secondary" onclick="loadDisqus();">点击加载评论</button>
+    </div>
+</div>
+
+<script>
+    // DON'T EDIT BELOW THIS LINE
+    if (themeOptions.disqus_shortname == '') {
+        document.querySelector('.comment').remove();
+    }
+
+    var disqus_config = function () {
+        this.page.url = 'https://hikc.net/posts/a67ef931/';
+        this.page.identifier = '/posts/a67ef931/';
+    };
+
+    function loadDisqus() {
+        var d = document, s = d.createElement('script');
+        s.src = 'https://' + themeOptions.disqus_shortname + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    };
+</script>
+<noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      
+    </main>
+  </div>
+</div>
+      <footer class="site-footer">
+    <div class="social">
+        <a class="social-item social-item-facebook" href="https://www.facebook.com/kaicheng.jiang.5/" target="_blank"
+            rel="noopener noreferrer" aria-label="Facebook">
+            <span style="font-size: 24px; color: #1877f2;">
+                <i class="fab fa-facebook-square"></i>
+            </span>
+        </a>
+        <a class="social-item social-item-email" href="mailto:jiangkch@outlook.com" target="_blank" rel="noopener noreferrer"
+            aria-label="Email">
+            <span style="font-size: 24px; color: #d93025;">
+                <i class="fas fa-envelope-square"></i>
+            </span>
+        </a>
+        <a class="social-item social-item-rss"
+            href="/atom.xml" target="_blank"
+            rel="noopener noreferrer" aria-label="RSS">
+            <span style="font-size: 24px; color: #ff572f;">
+                <i class="fas fa-rss-square"></i>
+            </span>
+        </a>
+    </div>
+
+    <div class="copyright">
+        &copy; 2019-2020 <a href="https://hikc.net/" target="_blank" rel="noopener noreferrer">HIKC.NET</a>. All Rights Reserved.
+    </div>
+
+    <nav class="footer-nav">
+        <a class="menu-item menu-item-home menu-item-current" href="/">Home</a>
+        <a class="menu-item menu-item-archive menu-item-current" href="/archives">Archives</a>
+        <a class="menu-item menu-item-about" href="/about">About</a>
+
+        <a class="menu-item js-theme" href="#" data-system="System theme" data-dark="Dark theme"
+            data-light="Light theme">
+            <svg class="icon theme-icon theme-icon-system">
+                <use xlink:href="#circle-half-full"></use>
+            </svg>
+            <svg class="icon theme-icon theme-icon-dark">
+                <use xlink:href="#brightness-2"></use>
+            </svg>
+            <svg class="icon theme-icon theme-icon-light">
+                <use xlink:href="#white-balance-sunny"></use>
+            </svg>
+            <span class="theme-text">System theme</span>
+        </a>
+    </nav>
+    <div class="site-info">
+        <div class="github-badge">
+            <a style="color: #fff" rel="license" href="https://hexo.io/" target="_blank" title="由 Hexo 强力驱动">
+                <span class="badge-subject">Powered</span><span class="badge-value bg-blue">Hexo</span></a>
+        </div>
+        <div class="github-badge">
+            <a style="color: #fff" rel="license" href="https://github.com/" target="_blank"
+                title="静态网页托管于 GitHub Pages 和 Coding Pages">
+                <span class="badge-subject">Hosted</span><span class="badge-value bg-lightgrey">GitHub &
+                    Coding</span></a>
+        </div>
+        <div class="github-badge">
+            <a style="color: #fff" rel="license" href="https://www.jsdelivr.com/" target="_blank"
+                title="jsDelivr 提供 CDN 加速服务">
+                <span class="badge-subject">CDN</span><span class="badge-value bg-orange">jsDelivr</span></a>
+        </div>
+        <div class="github-badge">
+            <a style="color: #fff" rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"
+                title="本站点采用知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议进行许可">
+                <span class="badge-subject"><i class="far fa-closed-captioning"></i></span><span
+                    class="badge-value bg-brightgreen">BY-NC-SA 4.0</span></a>
+        </div>
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+        <div class="github-badge">
+            <span class="badge-subject">UV</span><span class="badge-value bg-blueviolet" id="busuanzi_value_site_uv"></span>
+        </div>
+        <div class="github-badge">
+            <span class="badge-subject">PV</span><span class="badge-value bg-firebrick" id="busuanzi_value_site_pv"></span>
+        </div>
+    </div>
+</footer>
+
+      <div class="modal-overlay">
+  <div class="modal modal-search">
+    <div class="form-wrapper">
+      <input class="modal-input search-input" type="text" placeholder="输入关键词..." id="local-search-input">
+      <button class="form-button search-button" aria-label="Search">
+        <svg class="icon icon-search">
+          <use xlink:href="#magnify"></use>
+        </svg>
+        <svg class="icon icon-close">
+          <use xlink:href="#window-close"></use>
+        </svg>
+      </button>
+    </div>
+
+    <div class="popular-wrapper">
+      <h4 class="popular-title">搜索排行</h4>
+      <div class="popular-feed">
+        <a class="popular" href="/tags/hexo/">Hexo</a>
+        <a class="popular" href="/tags/Markdown/">Markdown</a>
+        <a class="popular" href="/tags/英语/">英语</a>
+      </div>
+    </div>
+
+    <div class="search-result" id="local-search-result"></div>
+
+  </div>
+
+  <button class="button-icon modal-close" aria-label="Close">
+    <svg class="icon icon-close">
+      <use xlink:href="#window-close"></use>
+    </svg>
+  </button>
+</div>
+
+<script type="text/javascript" id="local.search.active">
+  var inputArea = document.querySelector("#local-search-input");
+  var desktopSearchButton = document.querySelector("#local-search-open_Desktop");
+  var mobileSearchButton = document.querySelector("#local-search-open_Mobile");
+  desktopSearchButton.onclick = function () { getSearchFile(); this.onclick = null }
+  mobileSearchButton.onclick = function () { getSearchFile(); this.onclick = null }
+  inputArea.onkeydown = function () { if (event.keyCode == 13) return false }
+</script>
+    </div>
+  </div>
+
+  <script>
+    var body = document.querySelector('body');
+    if (window.innerWidth > body.clientWidth + 5) {
+      document.documentElement.style.setProperty('--scrollbar', (window.innerWidth - body.clientWidth) + 'px');
+    }
+  </script>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/b61238bc7b.js" crossorigin="anonymous"></script>
+  
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/main.min.js"></script>
+    
+    <script src="/js/search.js"></script>
+    
+    
+</body>
+</html>
