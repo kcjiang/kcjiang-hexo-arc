@@ -1,0 +1,151 @@
+.site-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 0 4.5rem;
+}
+
+.social {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.social-item {
+    margin: 0 4px;
+    color: var(--secondary-text-color);
+    line-height: 0;
+}
+
+.social-item .icon {
+    width: 24px;
+    height: 24px;
+}
+
+.copyright {
+    color: var(--secondary-text-color);
+    font-size: 1.2rem;
+    letter-spacing: -0.02rem;
+}
+
+.copyright a {
+    color: var(--secondary-text-color);
+}
+
+.copyright a:hover {
+    text-decoration: underline;
+    opacity: 1;
+}
+
+.footer-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.footer-nav .menu-item {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    color: var(--secondary-text-color);
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.footer-nav .menu-item + .menu-item::before {
+    content: "\02022";
+    padding: 0 0.7rem;
+    font-family: serif;
+    line-height: 1;
+}
+
+.footer-nav .menu-item:hover {
+    opacity: 1;
+}
+
+.theme-icon {
+    width: 1.1rem;
+    height: 1.1rem;
+}
+
+.theme-text {
+    margin-left: 0.3rem;
+}
+
+.theme-icon-dark,
+.theme-icon-light {
+    display: none;
+}
+
+.theme-dark .theme-icon-system,
+.theme-dark .theme-icon-light {
+    display: none;
+}
+
+.theme-dark .theme-icon-dark {
+    display: block;
+}
+
+.theme-light .theme-icon-system,
+.theme-light .theme-icon-dark {
+    display: none;
+}
+
+.theme-light .theme-icon-light {
+    display: block;
+}
+
+/* ------------------- [github-badge] ------------------- */
+.site-info {
+    text-align: center;
+    font-size: 13px;
+    color: #b9b9b9;
+    margin-top: 1rem;
+}
+
+.github-badge {
+    display: inline-block;
+    border-radius: 4px;
+    text-shadow: none;
+    font-size: 12px;
+    color: #fff;
+    line-height: 15px;
+    background-color: #ABBAC3;
+    margin-bottom: 5px;
+}
+
+.github-badge .badge-subject {
+    display: inline-block;
+    background-color: #4D4D4D;
+    padding: 4px 4px 4px 6px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.github-badge .badge-value {
+    display: inline-block;
+    padding: 4px 6px 4px 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.github-badge .bg-hexo {
+    background-color: #0e83cd;
+}
+
+.github-badge .bg-github {
+    background-color: #6e398b;
+}
+
+.github-badge .bg-jsdelivr {
+    background-color: #ff5627;
+}
+
+.github-badge .bg-uv {
+    background-color: #62b900;
+}
+
+.github-badge .bg-pv {
+    background-color: #0a8;
+}

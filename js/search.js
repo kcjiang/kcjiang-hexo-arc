@@ -3,7 +3,7 @@ var searchFunc = function (path, search_id, content_id) {
   'use strict';
   var $input = document.getElementById(search_id);
   var $resultContent = document.getElementById(content_id);
-  $resultContent.innerHTML = "<div class=\"search-result-row\"><a class=\"search-result-row-link\">🟡提示：正在载入索引文件，请稍后……</a></div>";
+  $resultContent.innerHTML = "<div class=\"search-result-row\"><a class=\"search-result-row-link\">🟡 提示：正在载入索引文件，请稍后……</a></div>";
   $.ajax({
     // 0x01. load xml file
     url: path,
@@ -63,7 +63,7 @@ var searchFunc = function (path, search_id, content_id) {
           }
           // 0x05. show search results
           if (isMatch) {
-            str += "<div class='search-result-row'> <a href='" + data_url + "' class='search-result-row-link' target='_blank'>" + orig_data_title + "</a>";
+            str += "<div class='search-result-row'> <a href='/" + data_url + "' class='search-result-row-link' target='_blank'>" + orig_data_title + "</a>";
             var content = orig_data_content;
             if (first_occur >= 0) {
               // cut out 100 characters
@@ -97,7 +97,7 @@ var searchFunc = function (path, search_id, content_id) {
         });
         str += "";
         if (str.indexOf("<div class='search-result-row'>") === -1) {
-          return $resultContent.innerHTML = "<div class=\"search-result-row\"><a class=\"search-result-row-link\">🔴没有找到内容，请尝试更换检索词。</a></div>";
+          return $resultContent.innerHTML = "<div class=\"search-result-row\"><a class=\"search-result-row-link\">🔴 没有找到内容，请尝试更换检索词。</a></div>";
         }
         $resultContent.innerHTML = str;
       });

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>K.C&#39;s Blog</title>
+  <title>叫绿鲤鱼的绿驴</title>
   
   
-  <link href="https://hikc.net/atom.xml" rel="self"/>
+  <link href="https://jkc.icu/atom.xml" rel="self"/>
   
-  <link href="https://hikc.net/"/>
-  <updated>2020-09-25T16:15:56.000Z</updated>
-  <id>https://hikc.net/</id>
+  <link href="https://jkc.icu/"/>
+  <updated>2021-08-28T05:12:34.556Z</updated>
+  <id>https://jkc.icu/</id>
   
   <author>
     <name>K.C.</name>
@@ -17,281 +17,278 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>为 Hexo 创建本地搜索引擎</title>
-    <link href="https://hikc.net/posts/a67ef931/"/>
-    <id>https://hikc.net/posts/a67ef931/</id>
-    <published>2020-07-01T16:00:00.000Z</published>
-    <updated>2020-09-25T16:15:56.000Z</updated>
+    <title>Hello World333</title>
+    <link href="https://jkc.icu/posts/84ebce8b/"/>
+    <id>https://jkc.icu/posts/84ebce8b/</id>
+    <published>2021-08-25T00:23:12.000Z</published>
+    <updated>2021-08-28T05:12:34.556Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;自 2014 年，始终博客就开始使用 &lt;a href=&quot;https://hexo.io/zh-cn/index.html&quot;&gt;Hexo&lt;/a&gt; 这个静态站点生成工具了；犹记得当时参考的文章，是 Bruce 的 &lt;a</summary>
-        
-      
+    <summary type="html">这里是本文的摘要</summary>
     
     
+    <content src="https://jkc.icu/sushi.svg" type="image"/>
     
-    <category term="教程" scheme="https://hikc.net/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="Test Post" scheme="https://jkc.icu/categories/Test-Post/"/>
     
     
-    <category term="hexo" scheme="https://hikc.net/tags/hexo/"/>
+    <category term="Hexo" scheme="https://jkc.icu/tags/Hexo/"/>
+    
+    <category term="Hello World3" scheme="https://jkc.icu/tags/Hello-World3/"/>
     
   </entry>
   
   <entry>
-    <title>什么是Log模式</title>
-    <link href="https://hikc.net/posts/b9d53580/"/>
-    <id>https://hikc.net/posts/b9d53580/</id>
-    <published>2020-03-29T16:00:00.000Z</published>
-    <updated>2020-09-25T16:15:56.000Z</updated>
+    <title>Hello World333</title>
+    <link href="https://jkc.icu/posts/84ebce8b/"/>
+    <id>https://jkc.icu/posts/84ebce8b/</id>
+    <published>2021-08-25T00:23:12.000Z</published>
+    <updated>2021-08-28T05:12:34.556Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;h4 id=&quot;【什么是-Log-模式？】为什么-LOG-风格的影片拥有更高动态范围-HDR-？&quot;&gt;&lt;a href=&quot;#【什么是-Log-模式？】为什么-LOG-风格的影片拥有更高动态范围-HDR-？&quot; class=&quot;headerlink&quot; title=&quot;【什么是 Log</summary>
-        
-      
+    <summary type="html">这里是本文的摘要</summary>
     
     
+    <content src="https://jkc.icu/sushi.svg" type="image"/>
     
-    <category term="教程" scheme="https://hikc.net/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="Test Post" scheme="https://jkc.icu/categories/Test-Post/"/>
     
     
-    <category term="S-log" scheme="https://hikc.net/tags/S-log/"/>
+    <category term="Hexo" scheme="https://jkc.icu/tags/Hexo/"/>
     
-    <category term="摄影" scheme="https://hikc.net/tags/%E6%91%84%E5%BD%B1/"/>
+    <category term="Hello World3" scheme="https://jkc.icu/tags/Hello-World3/"/>
     
   </entry>
   
   <entry>
-    <title>英语听力之五步精听法</title>
-    <link href="https://hikc.net/posts/1f9cf6e7/"/>
-    <id>https://hikc.net/posts/1f9cf6e7/</id>
-    <published>2020-03-29T16:00:00.000Z</published>
-    <updated>2020-09-25T16:15:56.000Z</updated>
+    <title>Hello World333</title>
+    <link href="https://jkc.icu/posts/84ebce8b/"/>
+    <id>https://jkc.icu/posts/84ebce8b/</id>
+    <published>2021-08-25T00:23:12.000Z</published>
+    <updated>2021-08-28T05:12:34.556Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;这里是凭回忆记录的赵东坡老师的「五步精听法」。这个方法是我很多年前在上 TOEFL iBT 培训时，从赵东坡老师处习得。&lt;/p&gt;
-&lt;p&gt;本文先讲怎么训练，然后解释为什么要这样训练。&lt;/p&gt;
-&lt;h2 id=&quot;五步精听法&quot;&gt;&lt;a href=&quot;#五步精听法&quot;</summary>
-        
-      
+    <summary type="html">这里是本文的摘要</summary>
     
     
+    <content src="https://jkc.icu/sushi.svg" type="image"/>
     
-    <category term="资料" scheme="https://hikc.net/categories/%E8%B5%84%E6%96%99/"/>
+    
+    <category term="Test Post" scheme="https://jkc.icu/categories/Test-Post/"/>
     
     
-    <category term="英语" scheme="https://hikc.net/tags/%E8%8B%B1%E8%AF%AD/"/>
+    <category term="Hexo" scheme="https://jkc.icu/tags/Hexo/"/>
+    
+    <category term="Hello World3" scheme="https://jkc.icu/tags/Hello-World3/"/>
     
   </entry>
   
   <entry>
-    <title>英语语法（五）：非谓语动词</title>
-    <link href="https://hikc.net/posts/8811a582/"/>
-    <id>https://hikc.net/posts/8811a582/</id>
-    <published>2020-02-21T16:00:00.000Z</published>
-    <updated>2020-09-25T16:15:56.000Z</updated>
+    <title>Hello World2</title>
+    <link href="https://jkc.icu/posts/98975d7d/"/>
+    <id>https://jkc.icu/posts/98975d7d/</id>
+    <published>2021-08-24T00:23:12.000Z</published>
+    <updated>2021-08-28T05:12:25.993Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在很早的&lt;a href=&quot;/2016/07/31/tense-selection/&quot;&gt;上一篇&lt;/a&gt;文章中，我们讲了英语当中的时态选择。时态选择涉及到的主要是谓语动词的形态变化。此篇继续讲动词，不过话题转向非谓语动词。&lt;/p&gt;
-&lt;h2 id=&quot;独立子句与主谓结构&quot;&gt;&lt;a</summary>
-        
-      
+    <summary type="html">这里是本文的摘要</summary>
     
     
+    <content src="https://jkc.icu/sushi.svg" type="image"/>
     
-    <category term="资料" scheme="https://hikc.net/categories/%E8%B5%84%E6%96%99/"/>
+    
+    <category term="Test Post" scheme="https://jkc.icu/categories/Test-Post/"/>
     
     
-    <category term="英语" scheme="https://hikc.net/tags/%E8%8B%B1%E8%AF%AD/"/>
+    <category term="Hexo" scheme="https://jkc.icu/tags/Hexo/"/>
+    
+    <category term="Hello World1" scheme="https://jkc.icu/tags/Hello-World1/"/>
     
   </entry>
   
   <entry>
-    <title>Hexo 从头开始</title>
-    <link href="https://hikc.net/posts/9ec8e816/"/>
-    <id>https://hikc.net/posts/9ec8e816/</id>
-    <published>2019-08-21T11:15:36.000Z</published>
-    <updated>2020-09-25T16:15:56.000Z</updated>
+    <title>Hello World2</title>
+    <link href="https://jkc.icu/posts/98975d7d/"/>
+    <id>https://jkc.icu/posts/98975d7d/</id>
+    <published>2021-08-24T00:23:12.000Z</published>
+    <updated>2021-08-28T05:12:25.993Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;其实我也是刚接触到Hexo，之前用过Wordpress。老实说Wordpress还是很方便的，但是功能相对固定，对于新手来说，客制化主题还是挺复杂的。一些高质量的主题也需要付费订阅。所以后来我想寻找一种不需要配置后端服务器的静态网页生成框架。&lt;/p&gt;
-&lt;p&gt;hexo</summary>
-        
-      
+    <summary type="html">这里是本文的摘要</summary>
     
     
+    <content src="https://jkc.icu/sushi.svg" type="image"/>
     
-    <category term="教程" scheme="https://hikc.net/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="Test Post" scheme="https://jkc.icu/categories/Test-Post/"/>
     
     
-    <category term="hexo" scheme="https://hikc.net/tags/hexo/"/>
+    <category term="Hexo" scheme="https://jkc.icu/tags/Hexo/"/>
+    
+    <category term="Hello World1" scheme="https://jkc.icu/tags/Hello-World1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World2</title>
+    <link href="https://jkc.icu/posts/98975d7d/"/>
+    <id>https://jkc.icu/posts/98975d7d/</id>
+    <published>2021-08-24T00:23:12.000Z</published>
+    <updated>2021-08-28T05:12:25.993Z</updated>
+    
+    
+    <summary type="html">这里是本文的摘要</summary>
+    
+    
+    <content src="https://jkc.icu/sushi.svg" type="image"/>
+    
+    
+    <category term="Test Post" scheme="https://jkc.icu/categories/Test-Post/"/>
+    
+    
+    <category term="Hexo" scheme="https://jkc.icu/tags/Hexo/"/>
+    
+    <category term="Hello World1" scheme="https://jkc.icu/tags/Hello-World1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World1</title>
+    <link href="https://jkc.icu/posts/19e0cc7/"/>
+    <id>https://jkc.icu/posts/19e0cc7/</id>
+    <published>2021-08-23T00:21:12.000Z</published>
+    <updated>2021-08-28T05:12:16.737Z</updated>
+    
+    
+    <summary type="html">这里是本文的摘要</summary>
+    
+    
+    <content src="https://jkc.icu/sushi.svg" type="image"/>
+    
+    
+    <category term="Test Post" scheme="https://jkc.icu/categories/Test-Post/"/>
+    
+    
+    <category term="Hello World" scheme="https://jkc.icu/tags/Hello-World/"/>
+    
+    <category term="Hexo" scheme="https://jkc.icu/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World1</title>
+    <link href="https://jkc.icu/posts/19e0cc7/"/>
+    <id>https://jkc.icu/posts/19e0cc7/</id>
+    <published>2021-08-23T00:21:12.000Z</published>
+    <updated>2021-08-28T05:12:16.737Z</updated>
+    
+    
+    <summary type="html">这里是本文的摘要</summary>
+    
+    
+    <content src="https://jkc.icu/sushi.svg" type="image"/>
+    
+    
+    <category term="Test Post" scheme="https://jkc.icu/categories/Test-Post/"/>
+    
+    
+    <category term="Hello World" scheme="https://jkc.icu/tags/Hello-World/"/>
+    
+    <category term="Hexo" scheme="https://jkc.icu/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World1</title>
+    <link href="https://jkc.icu/posts/19e0cc7/"/>
+    <id>https://jkc.icu/posts/19e0cc7/</id>
+    <published>2021-08-23T00:21:12.000Z</published>
+    <updated>2021-08-28T05:12:16.737Z</updated>
+    
+    
+    <summary type="html">这里是本文的摘要</summary>
+    
+    
+    <content src="https://jkc.icu/sushi.svg" type="image"/>
+    
+    
+    <category term="Test Post" scheme="https://jkc.icu/categories/Test-Post/"/>
+    
+    
+    <category term="Hello World" scheme="https://jkc.icu/tags/Hello-World/"/>
+    
+    <category term="Hexo" scheme="https://jkc.icu/tags/Hexo/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="https://hikc.net/posts/4a17b156/"/>
-    <id>https://hikc.net/posts/4a17b156/</id>
-    <published>2019-04-14T09:26:18.000Z</published>
-    <updated>2020-09-25T16:15:56.000Z</updated>
+    <link href="https://jkc.icu/posts/4a17b156/"/>
+    <id>https://jkc.icu/posts/4a17b156/</id>
+    <published>2021-05-07T08:18:24.578Z</published>
+    <updated>2021-08-28T05:11:30.371Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
-        
-      
+    <summary type="html">这里是本文的摘要</summary>
     
     
+    <content src="https://jkc.icu/sushi.svg" type="image"/>
     
-    <category term="其他" scheme="https://hikc.net/categories/%E5%85%B6%E4%BB%96/"/>
+    
+    <category term="Test Post" scheme="https://jkc.icu/categories/Test-Post/"/>
     
     
-    <category term="hexo" scheme="https://hikc.net/tags/hexo/"/>
+    <category term="Hello World" scheme="https://jkc.icu/tags/Hello-World/"/>
+    
+    <category term="Hexo" scheme="https://jkc.icu/tags/Hexo/"/>
     
   </entry>
   
   <entry>
-    <title>Markdown基本语法总结</title>
-    <link href="https://hikc.net/posts/e08b1da7/"/>
-    <id>https://hikc.net/posts/e08b1da7/</id>
-    <published>2018-12-12T16:00:00.000Z</published>
-    <updated>2020-09-25T16:15:56.000Z</updated>
+    <title>Hello World</title>
+    <link href="https://jkc.icu/posts/4a17b156/"/>
+    <id>https://jkc.icu/posts/4a17b156/</id>
+    <published>2021-05-07T08:18:24.578Z</published>
+    <updated>2021-08-28T05:11:30.371Z</updated>
     
     
-    <summary type="html">&lt;p&gt;Markdown是一种纯文本格式的标记语言。通过简单的标记语法，它可以使普通文本内容具有一定的格式。</summary>
+    <summary type="html">这里是本文的摘要</summary>
     
     
-    
-    <category term="教程" scheme="https://hikc.net/categories/%E6%95%99%E7%A8%8B/"/>
-    
-    
-    <category term="hexo" scheme="https://hikc.net/tags/hexo/"/>
-    
-    <category term="Markdown" scheme="https://hikc.net/tags/Markdown/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>英语语法（四）：时态选择</title>
-    <link href="https://hikc.net/posts/1eec6e48/"/>
-    <id>https://hikc.net/posts/1eec6e48/</id>
-    <published>2016-07-29T16:00:00.000Z</published>
-    <updated>2020-09-25T16:15:56.000Z</updated>
+    <content src="https://jkc.icu/sushi.svg" type="image"/>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;照例开头得有个抱怨：距离这个系列的&lt;a</summary>
-        
-      
+    <category term="Test Post" scheme="https://jkc.icu/categories/Test-Post/"/>
     
     
+    <category term="Hello World" scheme="https://jkc.icu/tags/Hello-World/"/>
     
-    <category term="资料" scheme="https://hikc.net/categories/%E8%B5%84%E6%96%99/"/>
-    
-    
-    <category term="英语" scheme="https://hikc.net/tags/%E8%8B%B1%E8%AF%AD/"/>
+    <category term="Hexo" scheme="https://jkc.icu/tags/Hexo/"/>
     
   </entry>
   
   <entry>
-    <title>英语语法（三）：动词时态</title>
-    <link href="https://hikc.net/posts/aa58616/"/>
-    <id>https://hikc.net/posts/aa58616/</id>
-    <published>2015-05-02T16:00:00.000Z</published>
-    <updated>2020-09-25T16:15:56.000Z</updated>
+    <title>Hello World</title>
+    <link href="https://jkc.icu/posts/4a17b156/"/>
+    <id>https://jkc.icu/posts/4a17b156/</id>
+    <published>2021-05-07T08:18:24.578Z</published>
+    <updated>2021-08-28T05:11:30.371Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;这个系列的 &lt;a href=&quot;/2014/06/22/noun-phrase-and-articles/&quot;&gt;上一篇文章&lt;/a&gt;</summary>
-        
-      
+    <summary type="html">这里是本文的摘要</summary>
     
     
-    
-    <category term="资料" scheme="https://hikc.net/categories/%E8%B5%84%E6%96%99/"/>
-    
-    
-    <category term="英语" scheme="https://hikc.net/tags/%E8%8B%B1%E8%AF%AD/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>英语语法（二）：名词短语</title>
-    <link href="https://hikc.net/posts/4da21885/"/>
-    <id>https://hikc.net/posts/4da21885/</id>
-    <published>2014-06-21T16:00:00.000Z</published>
-    <updated>2020-09-25T16:15:56.000Z</updated>
+    <content src="https://jkc.icu/sushi.svg" type="image"/>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;语法是语言的规范，制定语法的目的是为了让表达清晰、意思完整、不致有歧义。人类活动中的情形千差万别，为了表达清晰等目的，会形成许多特例。因此如果尝试通过列举语法现象及特例来描述语法，可想见是非常繁琐的，并且这种行为有舍本逐末之嫌。&lt;/p&gt;
-&lt;p&gt;在看过旋元佑先生写的《语法俱乐</summary>
-        
-      
+    <category term="Test Post" scheme="https://jkc.icu/categories/Test-Post/"/>
     
     
+    <category term="Hello World" scheme="https://jkc.icu/tags/Hello-World/"/>
     
-    <category term="资料" scheme="https://hikc.net/categories/%E8%B5%84%E6%96%99/"/>
-    
-    
-    <category term="英语" scheme="https://hikc.net/tags/%E8%8B%B1%E8%AF%AD/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>英语语法（一）：基本句型、动词分类、补语</title>
-    <link href="https://hikc.net/posts/6a9c0e64/"/>
-    <id>https://hikc.net/posts/6a9c0e64/</id>
-    <published>2014-06-20T16:00:00.000Z</published>
-    <updated>2020-09-25T16:15:56.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;语法是语言的规范，制定语法的目的是为了让表达清晰、意思完整、不致有歧义。人类活动中的情形千差万别，为了表达清晰等目的，会形成许多特例。因此如果尝试通过列举语法现象及特例来描述语法，可想见是非常繁琐的，并且这种行为有舍本逐末之嫌。&lt;/p&gt;
-&lt;p&gt;在看过旋元佑先生写的《语法俱乐</summary>
-        
-      
-    
-    
-    
-    <category term="资料" scheme="https://hikc.net/categories/%E8%B5%84%E6%96%99/"/>
-    
-    
-    <category term="英语" scheme="https://hikc.net/tags/%E8%8B%B1%E8%AF%AD/"/>
+    <category term="Hexo" scheme="https://jkc.icu/tags/Hexo/"/>
     
   </entry>
   
