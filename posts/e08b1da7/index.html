@@ -12,7 +12,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>
-    Archives: 2021 [ 叫绿鲤鱼的绿驴 ]
+    Markdown基本语法总结 [ 叫绿鲤鱼的绿驴 ]
   </title>
 
   
@@ -56,7 +56,7 @@
 <meta name="generator" content="Hexo 5.4.0"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"><link rel="alternate" href="/atom.xml" title="叫绿鲤鱼的绿驴" type="application/atom+xml">
 </head>
 
-<body class="archive-template">
+<body class="post-template">
   <svg width="0" height="0" style="display: none;">
     <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="arrow-left">
         <path d="M26.667 14.667v2.667h-16L18 24.667l-1.893 1.893L5.547 16l10.56-10.56L18 7.333l-7.333 7.333h16z"></path>
@@ -292,98 +292,345 @@
 </header>
 
 
+<header class="sticky">
+  <div class="sticky-title">
+    Markdown基本语法总结
+  </div>
+  <button class="button-icon sticky-toc-button" aria-label="Table of Contents">
+    <svg class="icon">
+      <use xlink:href="#table-of-contents"></use>
+    </svg>
+    <div class="sticky-toc"></div>
+  </button>
+  <div class="sticky-track">
+    <div class="sticky-progress"></div>
+  </div>
+</header>
+
 
 
       
 
       <div class="site-content">
           <div class="content-area">
-  <main class="site-main">
-
-    <header class="single-header kg-canvas">
-      <h1 class="single-title">归档</h1>
-    </header>
-
-    <div class="box-selector container box-selector-cat hidden-lg hidden-xl">
-      <button class="button box-selector-button" data-box="cat">分类</button>
-      <button class="button button-secondary box-selector-button" data-box="tag">标签</button>
+    <main class="site-main">
+        <article class="single post">
+            <header class="single-header kg-canvas">
+  <div class="single-meta">
+    <span class="single-meta-item single-meta-date">
+      <time datetime="2018-12-13">
+        2018-12-13
+      </time>
+    </span>
+    
+    <span class="single-meta-item single-meta-length">
+      3 min read
+    </span>
+    
+    <span class="single-meta-item single-meta-tag">
+      
+      <a class="post-tag" href="/tags/Markdown/">#Markdown</a> <a class="post-tag" href="/tags/hexo/">#hexo</a>
+      
+    </span>
+  </div>
+  
+  <h1 class="single-title">Markdown基本语法总结</h1>
+  
+    <div class="single-excerpt">
+      &lt;p&gt;Markdown是一种纯文本格式的标记语言。通过简单的标记语法，它可以使普通文本内容具有一定的格式。
     </div>
+  
+  
+  
+</header>
+            <div class="single-content kg-canvas u-text-format">
+                <p>Markdown是一种纯文本格式的标记语言。通过简单的标记语法，它可以使普通文本内容具有一定的格式。<span id="more"></span></p>
+<h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><p>在想要设置为标题的文字前面加#来表示<br>一个#是一级标题，两个#是二级标题，以此类推。支持六级标题。这也将作为文章目录标签出现在目录栏，如右侧的<font color=#29C6CD>【快速索引】</font></p>
+<p>注：标准语法一般在#后跟个空格再写文字，有的地方不加也行。</p>
+<p><font color=#44B8E1>Markdown语法示例：</font></p>
+<pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 这是一级标题</span>
+<span class="token comment" spellcheck="true">## 这是二级标题</span>
+<span class="token comment" spellcheck="true">### 这是三级标题</span>
+<span class="token comment" spellcheck="true">#### 这是四级标题</span>
+<span class="token comment" spellcheck="true">##### 这是五级标题</span>
+<span class="token comment" spellcheck="true">###### 这是六级标题</span>
+</code></pre>
+<br>
 
-    <div class="box-area container">
-      <section class="box box-cat box-cat-width">
-        <header class="box-header">
-          <h2 class="box-title">分类 📦</h2>
-          <div class="box-amount">
-            <div class="box-amount-digit">3</div>
-          </div>
-        </header>
-        <article class="cat-list-box">
-          
-          
-          <a class="cat-item" href="/categories/Test-Post/">
-            <span class="name">Test Post</span>
-            <span class="badge">(1)</span>
-          </a>
-          
-          <a class="cat-item" href="/categories/%E6%95%99%E7%A8%8B/">
-            <span class="name">教程</span>
-            <span class="badge">(4)</span>
-          </a>
-          
-          <a class="cat-item" href="/categories/%E8%B5%84%E6%96%99/">
-            <span class="name">资料</span>
-            <span class="badge">(6)</span>
-          </a>
-          
-          
-        </article>
-      </section>
+<h2 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h2><p>加粗<br>要加粗的文字左右分别用两个*号包起来</p>
+<p>斜体<br>要倾斜的文字左右分别用一个*号包起来</p>
+<p>斜体加粗<br>要倾斜和加粗的文字左右分别用三个*号包起来</p>
+<p>删除线<br>要加删除线的文字左右分别用两个~~号包起来</p>
+<p><font color=#44B8E1>Markdown语法示例：</font></p>
+<pre class=" language-bash"><code class="language-bash">**这是加粗的文字**
+*这是倾斜的文字*
+***这是斜体加粗的文字***
+~~这是加删除线的文字~~
+</code></pre>
+<p><font color=#44B8E1>效果如下：</font></p>
+<p><strong>这是加粗的文字</strong><br><em>这是倾斜的文字</em><br><em><strong>这是斜体加粗的文字</strong></em><br><del>这是加删除线的文字</del><br><br></p>
+<h2 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h2><p>三个或者三个以上的 - 或者 * 都可以。但效果可能会有细微差别。</p>
+<p><font color=#44B8E1>Markdown语法示例：</font></p>
+<pre class=" language-bash"><code class="language-bash">---
+----
+***
+*****
+</code></pre>
+<p><font color=#44B8E1>效果如下：</font></p>
+<hr>
+<hr>
+<hr>
+<hr>
+<br>
 
-      <section class="box box-tag box-tag-width">
-        <header class="box-header">
-          <h2 class="box-title">标签 🏷️</h2>
-          <div class="box-amount">
-            <div class="box-amount-digit">7</div>
-          </div>
-        </header>
-        <article class="tag-list-box">
-          
-          
-          <a class="tag-item" href="/tags/%E8%8B%B1%E8%AF%AD/">
-            <span class="name">#英语</span>
-          </a>
-          
-          <a class="tag-item" href="/tags/hexo/">
-            <span class="name">#hexo</span>
-          </a>
-          
-          <a class="tag-item" href="/tags/Hello-World/">
-            <span class="name">#Hello World</span>
-          </a>
-          
-          <a class="tag-item" href="/tags/Hexo/">
-            <span class="name">#Hexo</span>
-          </a>
-          
-          <a class="tag-item" href="/tags/S-log/">
-            <span class="name">#S-log</span>
-          </a>
-          
-          <a class="tag-item" href="/tags/%E6%91%84%E5%BD%B1/">
-            <span class="name">#摄影</span>
-          </a>
-          
-          <a class="tag-item" href="/tags/Markdown/">
-            <span class="name">#Markdown</span>
-          </a>
-          
-          
-        </article>
-      </section>
+<h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><ul>
+<li><h3 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h3></li>
+</ul>
+<p><font color=#44B8E1>Markdown语法示例：</font></p>
+<pre class=" language-bash"><code class="language-bash">- 列表内容
++ 列表内容
+* 列表内容
+
+注意：- + * 跟内容之间都要有一个空格；无序列表用 - + * 任何一种都可以。
+</code></pre>
+<p><font color=#44B8E1>效果如下：</font></p>
+<ul>
+<li>列表内容</li>
+</ul>
+<ul>
+<li>列表内容</li>
+</ul>
+<ul>
+<li>列表内容</li>
+</ul>
+<hr>
+<ul>
+<li><h3 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h3></li>
+</ul>
+<p><font color=#44B8E1>Markdown语法示例：</font></p>
+<pre class=" language-bash"><code class="language-bash">1. 列表内容
+2. 列表内容
+3. 列表内容
+
+注意：序号跟内容之间要有空格
+</code></pre>
+<p><font color=#44B8E1>效果如下：</font></p>
+<ol>
+<li>列表内容</li>
+<li>列表内容</li>
+<li>列表内容</li>
+</ol>
+<hr>
+<ul>
+<li><h3 id="列表嵌套"><a href="#列表嵌套" class="headerlink" title="列表嵌套"></a>列表嵌套</h3></li>
+</ul>
+<p>上一级和下一级之间敲三个空格即可</p>
+<ul>
+<li>一级无序列表内容<ul>
+<li>二级无序列表内容</li>
+<li>二级无序列表内容</li>
+</ul>
+</li>
+</ul>
+<br>
+
+<ul>
+<li>一级无序列表内容<ol>
+<li>二级有序列表内容</li>
+<li>二级有序列表内容</li>
+</ol>
+</li>
+</ul>
+<br>
+
+<ol>
+<li>一级有序列表内容<ul>
+<li>二级无序列表内容</li>
+<li>二级无序列表内容</li>
+</ul>
+</li>
+</ol>
+<br>
+
+<h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><p><font color=#44B8E1>Markdown语法注释：</font></p>
+<table><tr><td bgcolor=#FFFACD>
+表头|表头|表头<br>
+------|:----:|------:<br>
+内容|内容|内容<br>
+内容|内容|内容<br>
+
+<p>第二行分割表头和内容。</p>
+<ul>
+<li>有一个就行，为了对齐，多加了几个。文字默认居左。</li>
+<li>两边加: 表示文字居中。</li>
+<li>右边加: 表示文字居右。<br>注：原生的语法两边都要用 | 包起来。此处省略</td></tr></table></li>
+</ul>
+<p><font color=#44B8E1>Markdown语法示例：</font></p>
+<pre class=" language-bash"><code class="language-bash">序号<span class="token operator">|</span>测试项目<span class="token operator">|</span>结果
+:-<span class="token operator">|</span>:-<span class="token operator">|</span>:-
+1<span class="token operator">|</span>第一个测试项目<span class="token operator">|</span>合格
+2<span class="token operator">|</span>第二个测试项目<span class="token operator">|</span>良好
+3<span class="token operator">|</span>第三个测试项目<span class="token operator">|</span>不合格
+</code></pre>
+<p><font color=#44B8E1>效果如下：</font></p>
+<table>
+<thead>
+<tr>
+<th align="left">序号</th>
+<th align="left">测试项目</th>
+<th align="left">结果</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">1</td>
+<td align="left">第一个测试项目</td>
+<td align="left">合格</td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left">第二个测试项目</td>
+<td align="left">良好</td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="left">第三个测试项目</td>
+<td align="left">不合格</td>
+</tr>
+</tbody></table>
+<br>
+
+<h2 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h2><p>在引用的文字前加&gt;即可。引用也可以嵌套，如：加两个&gt;&gt; 三个&gt;&gt;&gt; 或是加n个…<br>嵌套没有限制</p>
+<p><font color=#44B8E1>Markdown语法示例：</font></p>
+<pre class=" language-bash"><code class="language-bash"><span class="token operator">></span>这是引用的内容
+<span class="token operator">>></span>这是嵌套在第二层引用的内容
+<span class="token operator">>></span><span class="token operator">>></span>这是嵌套在第四层引用的内容
+</code></pre>
+<p><font color=#44B8E1>效果如下：</font></p>
+<blockquote>
+<p>这是引用的内容</p>
+<blockquote>
+<p>这是嵌套在第二层引用的内容</p>
+<blockquote>
+<blockquote>
+<p>这是嵌套在第四层引用的内容</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+<br>
+
+<h2 id="超链接"><a href="#超链接" class="headerlink" title="超链接"></a>超链接</h2><p><font color=#44B8E1>Markdown语法注释：</font></p>
+<table><tr><td bgcolor=#FFFACD>[超链接名](超链接地址 "超链接title")
+title可加可不加</td></tr></table>
+
+<p><font color=#44B8E1>Markdown语法示例：</font></p>
+<pre class=" language-bash"><code class="language-bash"><span class="token punctuation">[</span>百度<span class="token punctuation">]</span><span class="token punctuation">(</span>http://baidu.com<span class="token punctuation">)</span>
+</code></pre>
+<p><font color=#44B8E1>效果如下：</font></p>
+<p>【<a target="_blank" rel="noopener" href="http://baidu.com/">百度</a>】</p>
+<blockquote>
+<p>注：Markdown本身语法不支持链接在新页面中打开，如果想要在新页面中打开的话可以用html语言的a标签代替。<br><br></p>
+</blockquote>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><h3 id="单行代码"><a href="#单行代码" class="headerlink" title="单行代码"></a>单行代码</h3><p>代码之间分别用一个反引号包起来</p>
+<p><font color=#44B8E1>Markdown语法示例：</font></p>
+<pre class=" language-bash"><code class="language-bash"><span class="token variable"><span class="token variable">`</span>代码内容<span class="token variable">`</span></span>
+</code></pre>
+<h3 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h3><p>代码之间分别用三个反引号包起来，且两边的反引号单独占一行</p>
+<p><font color=#44B8E1>Markdown语法示例：</font></p>
+<pre class=" language-bash"><code class="language-bash"><span class="token punctuation">(</span>``<span class="token variable"><span class="token variable">`</span><span class="token punctuation">)</span>
+  代码<span class="token punctuation">..</span>.
+  代码<span class="token punctuation">..</span>.
+  代码<span class="token punctuation">..</span>.
+<span class="token punctuation">(</span><span class="token variable">`</span></span>``<span class="token punctuation">)</span>
+</code></pre>
+<blockquote>
+<p>注：为了防止转译，前后三个反引号处加了小括号，实际是没有的。这里只是用来演示，实际中去掉两边小括号即可。</p>
+</blockquote>
+<hr>
+<p>以上列举的关于Markdown的语法基本上可以满足一般博客页面编辑的需求，当然Markdown的潜力远不止于此（包括结合HTML+CSS），更多的使用方法可以访问 <a target="_blank" rel="noopener" href="http://www.markdown.cn/">Markdown中文网</a>。</p>
+<hr>
+<p>最后一次修订于：[2019/6/12]</p>
+
+            </div>
+            <footer class="single-footer container medium">
+    <div class="single-footer-left">
+        
+            <div class="navigation navigation-previous">
+                <a class="navigation-link" href="/posts/9ec8e816/" aria-label="Previous post">
+                    <svg class="icon navigation-icon">
+                        <use xlink:href="#arrow-left"></use>
+                    </svg>
+                </a>
+            </div>
+        
     </div>
-  </main>
+    <div class="single-footer-middle">
+        <div class="single-footer-top">
+            <h3 class="single-footer-title">点击分享</h3>
+        </div>
+        <div class="single-footer-bottom">
+            <div class="share">
+                <a class="share-link share-link-facebook"
+                    href="https://www.facebook.com/sharer.php?u=https://jkc.icu/posts/e08b1da7/"
+                    target="_blank" rel="noopener noreferrer">
+                    <svg class="icon icon-facebook">
+                        <use xlink:href="#facebook"></use>
+                    </svg>
+                    Facebook
+                </a>
+                <a class="share-link share-link-twitter"
+                    href="https://twitter.com/intent/tweet?url=https://jkc.icu/posts/e08b1da7/"
+                    target="_blank" rel="noopener noreferrer">
+                    <svg class="icon icon-twitter">
+                        <use xlink:href="#twitter"></use>
+                    </svg>
+                    Tweet
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="single-footer-right">
+        
+            <div class="navigation navigation-next">
+                <a class="navigation-link" href="/posts/1eec6e48/" aria-label="Next post">
+                    <svg class="icon navigation-icon">
+                        <use xlink:href="#arrow-right"></use>
+                    </svg>
+                </a>
+            </div>
+        
+    </div>
+</footer>
+        </article>
+        
+    <div class="comment container small">
+    <div id="disqus_thread">
+        <button class="button button-secondary" onclick="loadDisqus();">加载评论</button>
+    </div>
 </div>
 
+<script>
+    // DON'T EDIT BELOW THIS LINE
+    if (themeOptions.disqus_shortname == '') {
+        document.querySelector('.comment').remove();
+    }
+
+    var disqus_config = function () {
+        this.page.url = 'https://jkc.icu/posts/e08b1da7/';
+        this.page.identifier = '/posts/e08b1da7/';
+    };
+
+    function loadDisqus() {
+        var d = document, s = d.createElement('script');
+        s.src = 'https://' + themeOptions.disqus_shortname + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    };
+</script>
+<noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+    </main>
+</div>
       </div>
 
       <footer class="site-footer container">
