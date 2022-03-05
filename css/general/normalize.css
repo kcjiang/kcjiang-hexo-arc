@@ -141,6 +141,9 @@ textarea {
 [type="radio"] {
     box-sizing: border-box;
     padding: 0;
+    width: revert;
+    height: revert;
+    appearance: revert;
 }
 
 [type="number"]::-webkit-inner-spin-button,

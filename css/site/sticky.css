@@ -52,6 +52,8 @@
     transition-duration: 0.2s;
     transition-property: opacity transform;
     transform: translateY(-10px);
+    max-height: 50vh;
+    overflow-y: auto;
 }
 
 .sticky-toc-link {

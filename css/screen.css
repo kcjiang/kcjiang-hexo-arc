@@ -141,6 +141,9 @@ textarea {
 [type="radio"] {
     box-sizing: border-box;
     padding: 0;
+    width: revert;
+    height: revert;
+    appearance: revert;
 }
 
 [type="number"]::-webkit-inner-spin-button,
@@ -1184,6 +1187,8 @@ symbol {
     transition-duration: 0.2s;
     transition-property: opacity transform;
     transform: translateY(-10px);
+    max-height: 50vh;
+    overflow-y: auto;
 }
 
 .sticky-toc-link {
