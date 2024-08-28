@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&display=swap');
+
+
+.zdog-canvas {
+  background: #f4f1de;
+  display: block;
+  width: 100vw;
+  height:100vh;
+
+}
+body{
+  margin:0;
+  color:hsl(234deg 20% 20%);
+  font-family:'Fuzzy Bubbles', cursive;
+ 
+}
+.overTop{
+  position:fixed;
+  top:0;
+  left:0;
+  padding:30px;
+  font-size:50px;
+  font-weight:700;
+  pointer-events:none;
+}
+.overTop.bottom{
+  bottom:0;
+  top:auto;
+  display:inline-block;
+  font-size:14px;
+  right:0;
+}
+.overTop.top{
+  max-width:600px;
+}
+.right{
+  float:right;
+  
+}
+a{
+  color:inherit;
+  cursor:pointer;
+  pointer-events:auto;
+}
+a:hover{
+  text-decoration:none;
+}
